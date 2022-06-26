@@ -13,7 +13,6 @@ data class WearherLIstResponse(
     private fun toBannerModelList(): List<BannerModel>? {
         return banner?.map { it.toBannerModel() }
     }
-
     fun toWearherListModel(): WearherListModel {
         return WearherListModel(
             simpleModel = simple?.toSimpleModel(),
