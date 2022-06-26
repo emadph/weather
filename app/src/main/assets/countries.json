@@ -1,0 +1,1418 @@
+[
+  {
+    "code": "1876",
+    "short_name": "JM",
+    "full_name": "Jamaica",
+    "pattern_number_phone": "XXX XXXX"
+  },
+  {
+    "code": "1869",
+    "short_name": "KN",
+    "full_name": "Saint Kitts & Nevis",
+    "pattern_number_phone": "XXX XXXX"
+  },
+  {
+    "code": "1868",
+    "short_name": "TT",
+    "full_name": "Trinidad & Tobago",
+    "pattern_number_phone": "XXX XXXX"
+  },
+  {
+    "code": "1784",
+    "short_name": "VC",
+    "full_name": "Saint Vincent & the Grenadines",
+    "pattern_number_phone": "XXX XXXX"
+  },
+  {
+    "code": "1767",
+    "short_name": "DM",
+    "full_name": "Dominica",
+    "pattern_number_phone": "XXX XXXX"
+  },
+  {
+    "code": "1758",
+    "short_name": "LC",
+    "full_name": "Saint Lucia",
+    "pattern_number_phone": "XXX XXXX"
+  },
+  {
+    "code": "1721",
+    "short_name": "SX",
+    "full_name": "Sint Maarten",
+    "pattern_number_phone": "XXX XXXX"
+  },
+  {
+    "code": "1684",
+    "short_name": "AS",
+    "full_name": "American Samoa",
+    "pattern_number_phone": "XXX XXXX"
+  },
+  {
+    "code": "1671",
+    "short_name": "GU",
+    "full_name": "Guam",
+    "pattern_number_phone": "XXX XXXX"
+  },
+  {
+    "code": "1670",
+    "short_name": "MP",
+    "full_name": "Northern Mariana Islands",
+    "pattern_number_phone": "XXX XXXX"
+  },
+  {
+    "code": "1664",
+    "short_name": "MS",
+    "full_name": "Montserrat",
+    "pattern_number_phone": "XXX XXXX"
+  },
+  {
+    "code": "1649",
+    "short_name": "TC",
+    "full_name": "Turks & Caicos Islands",
+    "pattern_number_phone": "XXX XXXX"
+  },
+  {
+    "code": "1473",
+    "short_name": "GD",
+    "full_name": "Grenada",
+    "pattern_number_phone": "XXX XXXX"
+  },
+  {
+    "code": "1441",
+    "short_name": "BM",
+    "full_name": "Bermuda",
+    "pattern_number_phone": "XXX XXXX"
+  },
+  {
+    "code": "1345",
+    "short_name": "KY",
+    "full_name": "Cayman Islands",
+    "pattern_number_phone": "XXX XXXX"
+  },
+  {
+    "code": "1340",
+    "short_name": "VI",
+    "full_name": "US Virgin Islands",
+    "pattern_number_phone": "XXX XXXX"
+  },
+  {
+    "code": "1284",
+    "short_name": "VG",
+    "full_name": "British Virgin Islands",
+    "pattern_number_phone": "XXX XXXX"
+  },
+  {
+    "code": "1268",
+    "short_name": "AG",
+    "full_name": "Antigua & Barbuda",
+    "pattern_number_phone": "XXX XXXX"
+  },
+  {
+    "code": "1264",
+    "short_name": "AI",
+    "full_name": "Anguilla",
+    "pattern_number_phone": "XXX XXXX"
+  },
+  {
+    "code": "1246",
+    "short_name": "BB",
+    "full_name": "Barbados",
+    "pattern_number_phone": "XXX XXXX"
+  },
+  {
+    "code": "1242",
+    "short_name": "BS",
+    "full_name": "Bahamas",
+    "pattern_number_phone": "XXX XXXX"
+  },
+  {
+    "code": "998",
+    "short_name": "UZ",
+    "full_name": "Uzbekistan",
+    "pattern_number_phone": "XX XXXXXXX"
+  },
+  {
+    "code": "996",
+    "short_name": "KG",
+    "full_name": "Kyrgyzstan",
+    "pattern_number_phone": "XXX XXXXXX"
+  },
+  {
+    "code": "995",
+    "short_name": "GE",
+    "full_name": "Georgia",
+    "pattern_number_phone": "XXX XXX XXX"
+  },
+  {
+    "code": "994",
+    "short_name": "AZ",
+    "full_name": "Azerbaijan",
+    "pattern_number_phone": "XX XXX XXXX"
+  },
+  {
+    "code": "993",
+    "short_name": "TM",
+    "full_name": "Turkmenistan",
+    "pattern_number_phone": "XX XXXXXX"
+  },
+  {
+    "code": "992",
+    "short_name": "TJ",
+    "full_name": "Tajikistan",
+    "pattern_number_phone": "XX XXX XXXX"
+  },
+  {
+    "code": "977",
+    "short_name": "NP",
+    "full_name": "Nepal",
+    "pattern_number_phone": "XX XXXX XXXX"
+  },
+  {
+    "code": "976",
+    "short_name": "MN",
+    "full_name": "Mongolia",
+    "pattern_number_phone": "XX XX XXXX"
+  },
+  {
+    "code": "975",
+    "short_name": "BT",
+    "full_name": "Bhutan",
+    "pattern_number_phone": "XX XXX XXX"
+  },
+  {
+    "code": "974",
+    "short_name": "QA",
+    "full_name": "Qatar",
+    "pattern_number_phone": "XX XXX XXX"
+  },
+  {
+    "code": "973",
+    "short_name": "BH",
+    "full_name": "Bahrain",
+    "pattern_number_phone": "XXXX XXXX"
+  },
+  {
+    "code": "972",
+    "short_name": "IL",
+    "full_name": "Israel",
+    "pattern_number_phone": "XX XXX XXXX"
+  },
+  {
+    "code": "971",
+    "short_name": "AE",
+    "full_name": "United Arab Emirates",
+    "pattern_number_phone": "XX XXX XXXX"
+  },
+  {
+    "code": "970",
+    "short_name": "PS",
+    "full_name": "Palestine",
+    "pattern_number_phone": "XXX XX XXXX"
+  },
+  {
+    "code": "968",
+    "short_name": "OM",
+    "full_name": "Oman",
+    "pattern_number_phone": "XXXX XXXX"
+  },
+  {
+    "code": "967",
+    "short_name": "YE",
+    "full_name": "Yemen",
+    "pattern_number_phone": "XXX XXX XXX"
+  },
+  {
+    "code": "966",
+    "short_name": "SA",
+    "full_name": "Saudi Arabia",
+    "pattern_number_phone": "XX XXX XXXX"
+  },
+  {
+    "code": "965",
+    "short_name": "KW",
+    "full_name": "Kuwait",
+    "pattern_number_phone": "XXXX XXXX"
+  },
+  {
+    "code": "964",
+    "short_name": "IQ",
+    "full_name": "Iraq",
+    "pattern_number_phone": "XXX XXX XXXX"
+  },
+  {
+    "code": "963",
+    "short_name": "SY",
+    "full_name": "Syria",
+    "pattern_number_phone": "XXX XXX XXX"
+  },
+  {
+    "code": "962",
+    "short_name": "JO",
+    "full_name": "Jordan",
+    "pattern_number_phone": "X XXXX XXXX"
+  },
+  {
+    "code": "961",
+    "short_name": "LB",
+    "full_name": "Lebanon",
+    "pattern_number_phone": ""
+  },
+  {
+    "code": "960",
+    "short_name": "MV",
+    "full_name": "Maldives",
+    "pattern_number_phone": "XXX XXXX"
+  },
+  {
+    "code": "886",
+    "short_name": "TW",
+    "full_name": "Taiwan",
+    "pattern_number_phone": "XXX XXX XXX"
+  },
+  {
+    "code": "883",
+    "short_name": "GO",
+    "full_name": "International Networks",
+    "pattern_number_phone": ""
+  },
+  {
+    "code": "882",
+    "short_name": "GO",
+    "full_name": "International Networks",
+    "pattern_number_phone": ""
+  },
+  {
+    "code": "881",
+    "short_name": "GO",
+    "full_name": "Global Mobile Satellite",
+    "pattern_number_phone": ""
+  },
+  {
+    "code": "880",
+    "short_name": "BD",
+    "full_name": "Bangladesh",
+    "pattern_number_phone": ""
+  },
+  {
+    "code": "856",
+    "short_name": "LA",
+    "full_name": "Laos",
+    "pattern_number_phone": "XX XX XXX XXX"
+  },
+  {
+    "code": "855",
+    "short_name": "KH",
+    "full_name": "Cambodia",
+    "pattern_number_phone": ""
+  },
+  {
+    "code": "853",
+    "short_name": "MO",
+    "full_name": "Macau",
+    "pattern_number_phone": "XXXX XXXX"
+  },
+  {
+    "code": "852",
+    "short_name": "HK",
+    "full_name": "Hong Kong",
+    "pattern_number_phone": "X XXX XXXX"
+  },
+  {
+    "code": "850",
+    "short_name": "KP",
+    "full_name": "North Korea",
+    "pattern_number_phone": ""
+  },
+  {
+    "code": "692",
+    "short_name": "MH",
+    "full_name": "Marshall Islands",
+    "pattern_number_phone": ""
+  },
+  {
+    "code": "691",
+    "short_name": "FM",
+    "full_name": "Micronesia",
+    "pattern_number_phone": ""
+  },
+  {
+    "code": "690",
+    "short_name": "TK",
+    "full_name": "Tokelau",
+    "pattern_number_phone": ""
+  },
+  {
+    "code": "689",
+    "short_name": "PF",
+    "full_name": "French Polynesia",
+    "pattern_number_phone": ""
+  },
+  {
+    "code": "688",
+    "short_name": "TV",
+    "full_name": "Tuvalu",
+    "pattern_number_phone": ""
+  },
+  {
+    "code": "687",
+    "short_name": "NC",
+    "full_name": "New Caledonia",
+    "pattern_number_phone": ""
+  },
+  {
+    "code": "686",
+    "short_name": "KI",
+    "full_name": "Kiribati",
+    "pattern_number_phone": ""
+  },
+  {
+    "code": "685",
+    "short_name": "WS",
+    "full_name": "Samoa",
+    "pattern_number_phone": ""
+  },
+  {
+    "code": "683",
+    "short_name": "NU",
+    "full_name": "Niue",
+    "pattern_number_phone": ""
+  },
+  {
+    "code": "682",
+    "short_name": "CK",
+    "full_name": "Cook Islands",
+    "pattern_number_phone": ""
+  },
+  {
+    "code": "681",
+    "short_name": "WF",
+    "full_name": "Wallis & Futuna",
+    "pattern_number_phone": ""
+  },
+  {
+    "code": "680",
+    "short_name": "PW",
+    "full_name": "Palau",
+    "pattern_number_phone": ""
+  },
+  {
+    "code": "679",
+    "short_name": "FJ",
+    "full_name": "Fiji",
+    "pattern_number_phone": ""
+  },
+  {
+    "code": "678",
+    "short_name": "VU",
+    "full_name": "Vanuatu",
+    "pattern_number_phone": ""
+  },
+  {
+    "code": "677",
+    "short_name": "SB",
+    "full_name": "Solomon Islands",
+    "pattern_number_phone": ""
+  },
+  {
+    "code": "676",
+    "short_name": "TO",
+    "full_name": "Tonga",
+    "pattern_number_phone": ""
+  },
+  {
+    "code": "675",
+    "short_name": "PG",
+    "full_name": "Papua New Guinea",
+    "pattern_number_phone": ""
+  },
+  {
+    "code": "674",
+    "short_name": "NR",
+    "full_name": "Nauru",
+    "pattern_number_phone": ""
+  },
+  {
+    "code": "673",
+    "short_name": "BN",
+    "full_name": "Brunei Darussalam",
+    "pattern_number_phone": "XXX XXXX"
+  },
+  {
+    "code": "672",
+    "short_name": "NF",
+    "full_name": "Norfolk Island",
+    "pattern_number_phone": ""
+  },
+  {
+    "code": "670",
+    "short_name": "TL",
+    "full_name": "Timor-Leste",
+    "pattern_number_phone": ""
+  },
+  {
+    "code": "599",
+    "short_name": "BQ",
+    "full_name": "Bonaire, Sint Eustatius & Saba",
+    "pattern_number_phone": ""
+  },
+  {
+    "code": "599",
+    "short_name": "CW",
+    "full_name": "Cura\u00e7ao",
+    "pattern_number_phone": ""
+  },
+  {
+    "code": "598",
+    "short_name": "UY",
+    "full_name": "Uruguay",
+    "pattern_number_phone": "X XXX XXXX"
+  },
+  {
+    "code": "597",
+    "short_name": "SR",
+    "full_name": "Suriname",
+    "pattern_number_phone": "XXX XXXX"
+  },
+  {
+    "code": "596",
+    "short_name": "MQ",
+    "full_name": "Martinique",
+    "pattern_number_phone": ""
+  },
+  {
+    "code": "595",
+    "short_name": "PY",
+    "full_name": "Paraguay",
+    "pattern_number_phone": "XXX XXX XXX"
+  },
+  {
+    "code": "594",
+    "short_name": "GF",
+    "full_name": "French Guiana",
+    "pattern_number_phone": ""
+  },
+  {
+    "code": "593",
+    "short_name": "EC",
+    "full_name": "Ecuador",
+    "pattern_number_phone": "XX XXX XXXX"
+  },
+  {
+    "code": "592",
+    "short_name": "GY",
+    "full_name": "Guyana",
+    "pattern_number_phone": ""
+  },
+  {
+    "code": "591",
+    "short_name": "BO",
+    "full_name": "Bolivia",
+    "pattern_number_phone": "X XXX XXXX"
+  },
+  {
+    "code": "590",
+    "short_name": "GP",
+    "full_name": "Guadeloupe",
+    "pattern_number_phone": "XXX XX XX XX"
+  },
+  {
+    "code": "509",
+    "short_name": "HT",
+    "full_name": "Haiti",
+    "pattern_number_phone": ""
+  },
+  {
+    "code": "508",
+    "short_name": "PM",
+    "full_name": "Saint Pierre & Miquelon",
+    "pattern_number_phone": ""
+  },
+  {
+    "code": "507",
+    "short_name": "PA",
+    "full_name": "Panama",
+    "pattern_number_phone": "XXXX XXXX"
+  },
+  {
+    "code": "506",
+    "short_name": "CR",
+    "full_name": "Costa Rica",
+    "pattern_number_phone": "XXXX XXXX"
+  },
+  {
+    "code": "505",
+    "short_name": "NI",
+    "full_name": "Nicaragua",
+    "pattern_number_phone": "XXXX XXXX"
+  },
+  {
+    "code": "504",
+    "short_name": "HN",
+    "full_name": "Honduras",
+    "pattern_number_phone": "XXXX XXXX"
+  },
+  {
+    "code": "503",
+    "short_name": "SV",
+    "full_name": "El Salvador",
+    "pattern_number_phone": "XXXX XXXX"
+  },
+  {
+    "code": "502",
+    "short_name": "GT",
+    "full_name": "Guatemala",
+    "pattern_number_phone": "X XXX XXXX"
+  },
+  {
+    "code": "501",
+    "short_name": "BZ",
+    "full_name": "Belize",
+    "pattern_number_phone": ""
+  },
+  {
+    "code": "500",
+    "short_name": "FK",
+    "full_name": "Falkland Islands",
+    "pattern_number_phone": ""
+  },
+  {
+    "code": "423",
+    "short_name": "LI",
+    "full_name": "Liechtenstein",
+    "pattern_number_phone": ""
+  },
+  {
+    "code": "421",
+    "short_name": "SK",
+    "full_name": "Slovakia",
+    "pattern_number_phone": "XXX XXX XXX"
+  },
+  {
+    "code": "420",
+    "short_name": "CZ",
+    "full_name": "Czech Republic",
+    "pattern_number_phone": "XXX XXX XXX"
+  },
+  {
+    "code": "389",
+    "short_name": "MK",
+    "full_name": "Macedonia",
+    "pattern_number_phone": "XX XXX XXX"
+  },
+  {
+    "code": "387",
+    "short_name": "BA",
+    "full_name": "Bosnia & Herzegovina",
+    "pattern_number_phone": "XX XXX XXX"
+  },
+  {
+    "code": "386",
+    "short_name": "SI",
+    "full_name": "Slovenia",
+    "pattern_number_phone": "XX XXX XXX"
+  },
+  {
+    "code": "385",
+    "short_name": "HR",
+    "full_name": "Croatia",
+    "pattern_number_phone": ""
+  },
+  {
+    "code": "383",
+    "short_name": "XK",
+    "full_name": "Kosovo",
+    "pattern_number_phone": "XXXX XXXX"
+  },
+  {
+    "code": "382",
+    "short_name": "ME",
+    "full_name": "Montenegro",
+    "pattern_number_phone": ""
+  },
+  {
+    "code": "381",
+    "short_name": "RS",
+    "full_name": "Serbia",
+    "pattern_number_phone": "XX XXX XXXX"
+  },
+  {
+    "code": "380",
+    "short_name": "UA",
+    "full_name": "Ukraine",
+    "pattern_number_phone": "XX XXX XX XX"
+  },
+  {
+    "code": "378",
+    "short_name": "SM",
+    "full_name": "San Marino",
+    "pattern_number_phone": "XXX XXX XXXX"
+  },
+  {
+    "code": "377",
+    "short_name": "MC",
+    "full_name": "Monaco",
+    "pattern_number_phone": "XXXX XXXX"
+  },
+  {
+    "code": "376",
+    "short_name": "AD",
+    "full_name": "Andorra",
+    "pattern_number_phone": "XX XX XX"
+  },
+  {
+    "code": "375",
+    "short_name": "BY",
+    "full_name": "Belarus",
+    "pattern_number_phone": "XX XXX XXXX"
+  },
+  {
+    "code": "374",
+    "short_name": "AM",
+    "full_name": "Armenia",
+    "pattern_number_phone": "XX XXX XXX"
+  },
+  {
+    "code": "373",
+    "short_name": "MD",
+    "full_name": "Moldova",
+    "pattern_number_phone": "XX XXX XXX"
+  },
+  {
+    "code": "372",
+    "short_name": "EE",
+    "full_name": "Estonia",
+    "pattern_number_phone": ""
+  },
+  {
+    "code": "371",
+    "short_name": "LV",
+    "full_name": "Latvia",
+    "pattern_number_phone": "XXX XXXXX"
+  },
+  {
+    "code": "370",
+    "short_name": "LT",
+    "full_name": "Lithuania",
+    "pattern_number_phone": "XXX XXXXX"
+  },
+  {
+    "code": "359",
+    "short_name": "BG",
+    "full_name": "Bulgaria",
+    "pattern_number_phone": ""
+  },
+  {
+    "code": "358",
+    "short_name": "FI",
+    "full_name": "Finland",
+    "pattern_number_phone": ""
+  },
+  {
+    "code": "357",
+    "short_name": "CY",
+    "full_name": "Cyprus",
+    "pattern_number_phone": "XXXX XXXX"
+  },
+  {
+    "code": "356",
+    "short_name": "MT",
+    "full_name": "Malta",
+    "pattern_number_phone": "XX XX XX XX"
+  },
+  {
+    "code": "355",
+    "short_name": "AL",
+    "full_name": "Albania",
+    "pattern_number_phone": "XX XXX XXXX"
+  },
+  {
+    "code": "354",
+    "short_name": "IS",
+    "full_name": "Iceland",
+    "pattern_number_phone": "XXX XXXX"
+  },
+  {
+    "code": "353",
+    "short_name": "IE",
+    "full_name": "Ireland",
+    "pattern_number_phone": "XX XXX XXXX"
+  },
+  {
+    "code": "352",
+    "short_name": "LU",
+    "full_name": "Luxembourg",
+    "pattern_number_phone": ""
+  },
+  {
+    "code": "351",
+    "short_name": "PT",
+    "full_name": "Portugal",
+    "pattern_number_phone": "X XXXX XXXX"
+  },
+  {
+    "code": "350",
+    "short_name": "GI",
+    "full_name": "Gibraltar",
+    "pattern_number_phone": "XXXX XXXX"
+  },
+  {
+    "code": "299",
+    "short_name": "GL",
+    "full_name": "Greenland",
+    "pattern_number_phone": "XXX XXX"
+  },
+  {
+    "code": "298",
+    "short_name": "FO",
+    "full_name": "Faroe Islands",
+    "pattern_number_phone": "XXX XXX"
+  },
+  {
+    "code": "297",
+    "short_name": "AW",
+    "full_name": "Aruba",
+    "pattern_number_phone": "XXX XXXX"
+  },
+  {
+    "code": "291",
+    "short_name": "ER",
+    "full_name": "Eritrea",
+    "pattern_number_phone": "X XXX XXX"
+  },
+  {
+    "code": "290",
+    "short_name": "SH",
+    "full_name": "Saint Helena",
+    "pattern_number_phone": "XX XXX"
+  },
+  {
+    "code": "269",
+    "short_name": "KM",
+    "full_name": "Comoros",
+    "pattern_number_phone": "XXX XXXX"
+  },
+  {
+    "code": "268",
+    "short_name": "SZ",
+    "full_name": "Swaziland",
+    "pattern_number_phone": "XXXX XXXX"
+  },
+  {
+    "code": "267",
+    "short_name": "BW",
+    "full_name": "Botswana",
+    "pattern_number_phone": "XX XXX XXX"
+  },
+  {
+    "code": "266",
+    "short_name": "LS",
+    "full_name": "Lesotho",
+    "pattern_number_phone": "XX XXX XXX"
+  },
+  {
+    "code": "265",
+    "short_name": "MW",
+    "full_name": "Malawi",
+    "pattern_number_phone": "77 XXX XXXX"
+  },
+  {
+    "code": "264",
+    "short_name": "NA",
+    "full_name": "Namibia",
+    "pattern_number_phone": "XX XXX XXXX"
+  },
+  {
+    "code": "263",
+    "short_name": "ZW",
+    "full_name": "Zimbabwe",
+    "pattern_number_phone": "XX XXX XXXX"
+  },
+  {
+    "code": "262",
+    "short_name": "RE",
+    "full_name": "R\u00e9union",
+    "pattern_number_phone": "XXX XXX XXX"
+  },
+  {
+    "code": "261",
+    "short_name": "MG",
+    "full_name": "Madagascar",
+    "pattern_number_phone": "XX XX XXX XX"
+  },
+  {
+    "code": "260",
+    "short_name": "ZM",
+    "full_name": "Zambia",
+    "pattern_number_phone": "XX XXX XXXX"
+  },
+  {
+    "code": "258",
+    "short_name": "MZ",
+    "full_name": "Mozambique",
+    "pattern_number_phone": "XX XXX XXXX"
+  },
+  {
+    "code": "257",
+    "short_name": "BI",
+    "full_name": "Burundi",
+    "pattern_number_phone": "XX XX XXXX"
+  },
+  {
+    "code": "256",
+    "short_name": "UG",
+    "full_name": "Uganda",
+    "pattern_number_phone": "XX XXX XXXX"
+  },
+  {
+    "code": "255",
+    "short_name": "TZ",
+    "full_name": "Tanzania",
+    "pattern_number_phone": "XX XXX XXXX"
+  },
+  {
+    "code": "254",
+    "short_name": "KE",
+    "full_name": "Kenya",
+    "pattern_number_phone": "XXX XXX XXX"
+  },
+  {
+    "code": "253",
+    "short_name": "DJ",
+    "full_name": "Djibouti",
+    "pattern_number_phone": "XX XX XX XX"
+  },
+  {
+    "code": "252",
+    "short_name": "SO",
+    "full_name": "Somalia",
+    "pattern_number_phone": "XX XXX XXX"
+  },
+  {
+    "code": "251",
+    "short_name": "ET",
+    "full_name": "Ethiopia",
+    "pattern_number_phone": "XX XXX XXXX"
+  },
+  {
+    "code": "250",
+    "short_name": "RW",
+    "full_name": "Rwanda",
+    "pattern_number_phone": "XXX XXX XXX"
+  },
+  {
+    "code": "249",
+    "short_name": "SD",
+    "full_name": "Sudan",
+    "pattern_number_phone": "XX XXX XXXX"
+  },
+  {
+    "code": "248",
+    "short_name": "SC",
+    "full_name": "Seychelles",
+    "pattern_number_phone": "X XX XX XX"
+  },
+  {
+    "code": "247",
+    "short_name": "SH",
+    "full_name": "Saint Helena",
+    "pattern_number_phone": "XXXX"
+  },
+  {
+    "code": "246",
+    "short_name": "IO",
+    "full_name": "Diego Garcia",
+    "pattern_number_phone": "XXX XXXX"
+  },
+  {
+    "code": "245",
+    "short_name": "GW",
+    "full_name": "Guinea-Bissau",
+    "pattern_number_phone": "XXX XXXX"
+  },
+  {
+    "code": "244",
+    "short_name": "AO",
+    "full_name": "Angola",
+    "pattern_number_phone": "XXX XXX XXX"
+  },
+  {
+    "code": "243",
+    "short_name": "CD",
+    "full_name": "Congo (Dem. Rep.)",
+    "pattern_number_phone": "XX XXX XXXX"
+  },
+  {
+    "code": "242",
+    "short_name": "CG",
+    "full_name": "Congo (Rep.)",
+    "pattern_number_phone": "XX XXX XXXX"
+  },
+  {
+    "code": "241",
+    "short_name": "GA",
+    "full_name": "Gabon",
+    "pattern_number_phone": "X XX XX XX"
+  },
+  {
+    "code": "240",
+    "short_name": "GQ",
+    "full_name": "Equatorial Guinea",
+    "pattern_number_phone": "XXX XXX XXX"
+  },
+  {
+    "code": "239",
+    "short_name": "ST",
+    "full_name": "S\u00e3o Tom\u00e9 & Pr\u00edncipe",
+    "pattern_number_phone": "XX XXXXX"
+  },
+  {
+    "code": "238",
+    "short_name": "CV",
+    "full_name": "Cape Verde",
+    "pattern_number_phone": "XXX XXXX"
+  },
+  {
+    "code": "237",
+    "short_name": "CM",
+    "full_name": "Cameroon",
+    "pattern_number_phone": "XXXX XXXX"
+  },
+  {
+    "code": "236",
+    "short_name": "CF",
+    "full_name": "Central African Rep.",
+    "pattern_number_phone": "XX XX XX XX"
+  },
+  {
+    "code": "235",
+    "short_name": "TD",
+    "full_name": "Chad",
+    "pattern_number_phone": "XX XX XX XX"
+  },
+  {
+    "code": "234",
+    "short_name": "NG",
+    "full_name": "Nigeria",
+    "pattern_number_phone": ""
+  },
+  {
+    "code": "233",
+    "short_name": "GH",
+    "full_name": "Ghana",
+    "pattern_number_phone": ""
+  },
+  {
+    "code": "232",
+    "short_name": "SL",
+    "full_name": "Sierra Leone",
+    "pattern_number_phone": "XX XXX XXX"
+  },
+  {
+    "code": "231",
+    "short_name": "LR",
+    "full_name": "Liberia",
+    "pattern_number_phone": ""
+  },
+  {
+    "code": "230",
+    "short_name": "MU",
+    "full_name": "Mauritius",
+    "pattern_number_phone": ""
+  },
+  {
+    "code": "229",
+    "short_name": "BJ",
+    "full_name": "Benin",
+    "pattern_number_phone": "XX XXX XXX"
+  },
+  {
+    "code": "228",
+    "short_name": "TG",
+    "full_name": "Togo",
+    "pattern_number_phone": "XX XXX XXX"
+  },
+  {
+    "code": "227",
+    "short_name": "NE",
+    "full_name": "Niger",
+    "pattern_number_phone": "XX XX XX XX"
+  },
+  {
+    "code": "226",
+    "short_name": "BF",
+    "full_name": "Burkina Faso",
+    "pattern_number_phone": "XX XX XX XX"
+  },
+  {
+    "code": "225",
+    "short_name": "CI",
+    "full_name": "C\u00f4te d`Ivoire",
+    "pattern_number_phone": "XX XXX XXX"
+  },
+  {
+    "code": "224",
+    "short_name": "GN",
+    "full_name": "Guinea",
+    "pattern_number_phone": "XXX XXX XXX"
+  },
+  {
+    "code": "223",
+    "short_name": "ML",
+    "full_name": "Mali",
+    "pattern_number_phone": "XXXX XXXX"
+  },
+  {
+    "code": "222",
+    "short_name": "MR",
+    "full_name": "Mauritania",
+    "pattern_number_phone": "XXXX XXXX"
+  },
+  {
+    "code": "221",
+    "short_name": "SN",
+    "full_name": "Senegal",
+    "pattern_number_phone": "XX XXX XXXX"
+  },
+  {
+    "code": "220",
+    "short_name": "GM",
+    "full_name": "Gambia",
+    "pattern_number_phone": "XXX XXXX"
+  },
+  {
+    "code": "218",
+    "short_name": "LY",
+    "full_name": "Libya",
+    "pattern_number_phone": "XX XXX XXXX"
+  },
+  {
+    "code": "216",
+    "short_name": "TN",
+    "full_name": "Tunisia",
+    "pattern_number_phone": "XX XXX XXX"
+  },
+  {
+    "code": "213",
+    "short_name": "DZ",
+    "full_name": "Algeria",
+    "pattern_number_phone": "XXX XX XX XX"
+  },
+  {
+    "code": "212",
+    "short_name": "MA",
+    "full_name": "Morocco",
+    "pattern_number_phone": "XX XXX XXXX"
+  },
+  {
+    "code": "211",
+    "short_name": "SS",
+    "full_name": "South Sudan",
+    "pattern_number_phone": "XX XXX XXXX"
+  },
+  {
+    "code": "98",
+    "short_name": "IR",
+    "full_name": "Iran",
+    "pattern_number_phone": "XXX XXX XXXX"
+  },
+  {
+    "code": "95",
+    "short_name": "MM",
+    "full_name": "Myanmar",
+    "pattern_number_phone": ""
+  },
+  {
+    "code": "94",
+    "short_name": "LK",
+    "full_name": "Sri Lanka",
+    "pattern_number_phone": "XX XXX XXXX"
+  },
+  {
+    "code": "93",
+    "short_name": "AF",
+    "full_name": "Afghanistan",
+    "pattern_number_phone": "XXX XXX XXX"
+  },
+  {
+    "code": "92",
+    "short_name": "PK",
+    "full_name": "Pakistan",
+    "pattern_number_phone": "XXX XXX XXXX"
+  },
+  {
+    "code": "91",
+    "short_name": "IN",
+    "full_name": "India",
+    "pattern_number_phone": "XXXXX XXXXX"
+  },
+  {
+    "code": "90",
+    "short_name": "TR",
+    "full_name": "Turkey",
+    "pattern_number_phone": "XXX XXX XXXX"
+  },
+  {
+    "code": "86",
+    "short_name": "CN",
+    "full_name": "China",
+    "pattern_number_phone": "XXX XXXX XXXX"
+  },
+  {
+    "code": "84",
+    "short_name": "VN",
+    "full_name": "Vietnam",
+    "pattern_number_phone": ""
+  },
+  {
+    "code": "82",
+    "short_name": "KR",
+    "full_name": "South Korea",
+    "pattern_number_phone": ""
+  },
+  {
+    "code": "81",
+    "short_name": "JP",
+    "full_name": "Japan",
+    "pattern_number_phone": "XX XXXX XXXX"
+  },
+  {
+    "code": "66",
+    "short_name": "TH",
+    "full_name": "Thailand",
+    "pattern_number_phone": "X XXXX XXXX"
+  },
+  {
+    "code": "65",
+    "short_name": "SG",
+    "full_name": "Singapore",
+    "pattern_number_phone": "XXXX XXXX"
+  },
+  {
+    "code": "64",
+    "short_name": "NZ",
+    "full_name": "New Zealand",
+    "pattern_number_phone": ""
+  },
+  {
+    "code": "63",
+    "short_name": "PH",
+    "full_name": "Philippines",
+    "pattern_number_phone": "XXX XXX XXXX"
+  },
+  {
+    "code": "62",
+    "short_name": "ID",
+    "full_name": "Indonesia",
+    "pattern_number_phone": ""
+  },
+  {
+    "code": "61",
+    "short_name": "AU",
+    "full_name": "Australia",
+    "pattern_number_phone": "XXX XXX XXX"
+  },
+  {
+    "code": "60",
+    "short_name": "MY",
+    "full_name": "Malaysia",
+    "pattern_number_phone": ""
+  },
+  {
+    "code": "58",
+    "short_name": "VE",
+    "full_name": "Venezuela",
+    "pattern_number_phone": "XXX XXX XXXX"
+  },
+  {
+    "code": "57",
+    "short_name": "CO",
+    "full_name": "Colombia",
+    "pattern_number_phone": "XXX XXX XXXX"
+  },
+  {
+    "code": "56",
+    "short_name": "CL",
+    "full_name": "Chile",
+    "pattern_number_phone": "X XXXX XXXX"
+  },
+  {
+    "code": "55",
+    "short_name": "BR",
+    "full_name": "Brazil",
+    "pattern_number_phone": "XX XXXXX XXXX"
+  },
+  {
+    "code": "54",
+    "short_name": "AR",
+    "full_name": "Argentina",
+    "pattern_number_phone": ""
+  },
+  {
+    "code": "53",
+    "short_name": "CU",
+    "full_name": "Cuba",
+    "pattern_number_phone": "XXXX XXXX"
+  },
+  {
+    "code": "52",
+    "short_name": "MX",
+    "full_name": "Mexico",
+    "pattern_number_phone": ""
+  },
+  {
+    "code": "51",
+    "short_name": "PE",
+    "full_name": "Peru",
+    "pattern_number_phone": "XXX XXX XXX"
+  },
+  {
+    "code": "49",
+    "short_name": "DE",
+    "full_name": "Germany",
+    "pattern_number_phone": ""
+  },
+  {
+    "code": "48",
+    "short_name": "PL",
+    "full_name": "Poland",
+    "pattern_number_phone": "XXX XXX XXX"
+  },
+  {
+    "code": "47",
+    "short_name": "NO",
+    "full_name": "Norway",
+    "pattern_number_phone": "XXXX XXXX"
+  },
+  {
+    "code": "46",
+    "short_name": "SE",
+    "full_name": "Sweden",
+    "pattern_number_phone": "XX XXX XXXX"
+  },
+  {
+    "code": "45",
+    "short_name": "DK",
+    "full_name": "Denmark",
+    "pattern_number_phone": "XXXX XXXX"
+  },
+  {
+    "code": "44",
+    "short_name": "GB",
+    "full_name": "United Kingdom",
+    "pattern_number_phone": "XXXX XXXXXX"
+  },
+  {
+    "code": "43",
+    "short_name": "AT",
+    "full_name": "Austria",
+    "pattern_number_phone": ""
+  },
+  {
+    "code": "42",
+    "short_name": "YL",
+    "full_name": "Y-land",
+    "pattern_number_phone": ""
+  },
+  {
+    "code": "41",
+    "short_name": "CH",
+    "full_name": "Switzerland",
+    "pattern_number_phone": "XX XXX XXXX"
+  },
+  {
+    "code": "40",
+    "short_name": "RO",
+    "full_name": "Romania",
+    "pattern_number_phone": "XXX XXX XXX"
+  },
+  {
+    "code": "39",
+    "short_name": "IT",
+    "full_name": "Italy",
+    "pattern_number_phone": ""
+  },
+  {
+    "code": "36",
+    "short_name": "HU",
+    "full_name": "Hungary",
+    "pattern_number_phone": "XXX XXX XXX"
+  },
+  {
+    "code": "34",
+    "short_name": "ES",
+    "full_name": "Spain",
+    "pattern_number_phone": "XXX XXX XXX"
+  },
+  {
+    "code": "33",
+    "short_name": "FR",
+    "full_name": "France",
+    "pattern_number_phone": "X XX XX XX XX"
+  },
+  {
+    "code": "32",
+    "short_name": "BE",
+    "full_name": "Belgium",
+    "pattern_number_phone": "XXX XX XX XX"
+  },
+  {
+    "code": "31",
+    "short_name": "NL",
+    "full_name": "Netherlands",
+    "pattern_number_phone": "X XX XX XX XX"
+  },
+  {
+    "code": "30",
+    "short_name": "GR",
+    "full_name": "Greece",
+    "pattern_number_phone": "XXX XXX XXXX"
+  },
+  {
+    "code": "27",
+    "short_name": "ZA",
+    "full_name": "South Africa",
+    "pattern_number_phone": "XX XXX XXXX"
+  },
+  {
+    "code": "20",
+    "short_name": "EG",
+    "full_name": "Egypt",
+    "pattern_number_phone": "XX XXXX XXXX"
+  },
+  {
+    "code": "7",
+    "short_name": "KZ",
+    "full_name": "Kazakhstan",
+    "pattern_number_phone": "XXX XXX XX XX"
+  },
+  {
+    "code": "7",
+    "short_name": "RU",
+    "full_name": "Russian Federation",
+    "pattern_number_phone": "XXX XXX XXXX"
+  },
+  {
+    "code": "1",
+    "short_name": "PR",
+    "full_name": "Puerto Rico",
+    "pattern_number_phone": "XXX XXX XXXX"
+  },
+  {
+    "code": "1",
+    "short_name": "DO",
+    "full_name": "Dominican Rep.",
+    "pattern_number_phone": "XXX XXX XXXX"
+  },
+  {
+    "code": "1",
+    "short_name": "CA",
+    "full_name": "Canada",
+    "pattern_number_phone": "XXX XXX XXXX"
+  },
+  {
+    "code": "1",
+    "short_name": "US",
+    "full_name": "USA",
+    "pattern_number_phone": "XXX XXX XXXX"
+  }
+]

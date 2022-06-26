@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layoutDirection="ltr">
+
+    <TextView
+        android:id="@+id/tvCustomeError"
+        style="@style/TextBodySecondary"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_4dp"
+        android:drawablePadding="@dimen/size_8dp"
+        android:gravity="right|center"
+        android:textColor="@color/error"
+        android:visibility="gone"
+        app:drawableEndCompat="@drawable/shape_red_dot"
+        app:layout_constraintEnd_toEndOf="@+id/edtCustome"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtCustome" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/edtCustome"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/size_32dp"
+        android:background="@null"
+        android:drawablePadding="@dimen/size_8dp"
+        android:paddingEnd="@dimen/size_16dp"
+        android:paddingStart="@dimen/size_16dp"
+        android:singleLine="true"
+        android:textCursorDrawable="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

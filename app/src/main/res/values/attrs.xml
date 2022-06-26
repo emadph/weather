@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ProgressButton">
+        <attr name="text" format="reference" />
+        <attr name="loading" format="boolean" />
+        <attr name="enabled" format="boolean" />
+        <attr name="lottie_resId" format="reference" />
+        <attr name="colorPrimaryDisable" format="color" />
+        <attr name="colorToolbar" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="CustomToolbar">
+        <attr name="setCenterText" format="reference" />
+        <attr name="setRightText" format="reference" />
+        <attr name="setBigRightText" format="reference" />
+
+        <attr name="showBack" format="boolean" />
+        <attr name="showCenterLogo" format="boolean" />
+        <attr name="showIconProfile" format="boolean" />
+        <attr name="showMore" format="boolean" />
+        <attr name="showMenu" format="boolean" />
+        <attr name="showNotification" format="boolean" />
+        <attr name="showSetting" format="boolean" />
+        <attr name="showCenterText" format="boolean" />
+        <attr name="showRightText" format="boolean" />
+        <attr name="showBigRightText" format="boolean" />
+
+        <attr name="DrawableNotification" format="reference" />
+        <attr name="DrawableIconProfile" format="reference" />
+        <attr name="DrawableLogo" format="reference" />
+
+
+    </declare-styleable>
+    <declare-styleable name="CustomEditText">
+        <attr name="setErrorText" format="reference" />
+        <attr name="showSuccess" format="boolean" />
+        <attr name="showError" format="boolean" />
+
+    </declare-styleable>
+
+</resources>
