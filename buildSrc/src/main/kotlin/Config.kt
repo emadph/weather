@@ -4,9 +4,9 @@ import org.gradle.api.Project
 import org.gradle.kotlin.dsl.getByType
 
 object Config {
-    const val API_ROOT_TEST = "\"https://borsa.ir/\""
-    const val API_ROOT = "\"https://borsa.ir/\""
-    const val SECRET_KEY = "\"FxLwq!\$%S!\$@#}#EA(4Sd#\""
+    const val API_ROOT_TEST = "\"http://api.openweathermap.org/data/2.5/\""
+    const val API_ROOT = "\"http://api.openweathermap.org/data/2.5/\""
+    const val SECRET_KEY = "\"c37489058728f6774820d79553f9fdd7\""
 
 }
 
@@ -18,7 +18,6 @@ fun Project.configAndroid() = this.extensions.getByType<BaseExtension>().run {
         versionCode = Versions.App.versionCode
         versionName = Versions.App.versionName
         testInstrumentationRunner = Dependencies.testInstrumentRunner
-//        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
 
         buildConfigField("String", "API_ROOT", Config.API_ROOT)
         buildConfigField("String", "API_ROOT_TEST", Config.API_ROOT_TEST)

@@ -4,21 +4,21 @@ import androidx.room.Dao
 import androidx.room.Insert
 import androidx.room.OnConflictStrategy
 import androidx.room.Query
-import ir.pourahmadi.weather.data.local.entity.WearherListCacheEntity
+import ir.pourahmadi.weather.data.local.entity.WeatherListCacheEntity
 
 @Dao
-interface WearherDao {
+interface WeatherDao {
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    suspend fun insertWearherListCashe(WearherList: WearherListCacheEntity)
+    suspend fun insertWeatherListCashe(WeatherList: WeatherListCacheEntity)
 
-    @Query("DELETE FROM WearherListCacheEntity WHERE url = :url")
-    suspend fun deleteWearherCasheByUrl(url: String)
+    @Query("DELETE FROM WeatherListCacheEntity WHERE id = :id")
+    suspend fun deleteWeatherCasheById(id: Int)
 
-    @Query("DELETE FROM WearherListCacheEntity")
-    suspend fun dropWearherListCashe()
+    @Query("DELETE FROM WeatherListCacheEntity")
+    suspend fun dropWeatherListCashe()
 
-    @Query("SELECT * FROM WearherListCacheEntity WHERE url = :url ")
-    suspend fun getWearherListCache(url: String): WearherListCacheEntity?
+    @Query("SELECT * FROM WeatherListCacheEntity WHERE cityName = :cityName ")
+    suspend fun getWeatherListCache(cityName: String): WeatherListCacheEntity?
 
 }

@@ -2,14 +2,7 @@
     <string name="app_name">WeatherByPourahmadi</string>
     <string name="button_text_ok">باشه</string>
 
-    <string name="hint_PhoneNumber">912 123 45 67</string>
-
-
-    <string name="lbl_AcceptRolls">با ورود به آخرین خبر تمام شرایط و قوانین را می پذیرم</string>
-    <string name="lbl_PhoneNumber">شماره موبایل</string>
-    <string name="lbl_EnterAccount">ورود به حساب کاربری</string>
-    <string name="lbl_SubEnterAccount">لطفا شماره همراهتان را وارد کنید تا کد\n فعالسازی برایتان ارسال شود</string>
-    <string name="lbl_OtpCode">کد تایید شما</string>
+    <string name="lbl_AdvanceWeatherSearch">جستجوی پیشرفته</string>
 
     <string name="msg_no_Internet">عدم دسترسی به اینترنت</string>
 
@@ -17,21 +10,15 @@
     <string name="msg_error_networkConnectionFail">خطا در اتصال به اینترنت</string>
     <string name="msg_error_responseNull">اطلاعاتی دریافت نشد</string>
     <string name="msg_error_userNull">new user</string>
-
-    <string name="msg_error_input_wrongCountUser">نام کاربری باید حداقل 5 و حداکثر 30 کاراکتر باشد </string>
-    <string name="msg_error_input_wrongDotUser">نام کاربری نمی‌تواند با نقطه، شروع و یا تمام شود</string>
-    <string name="msg_error_input_empty_publicname">نام کاربری نمی‌تواند خالی باشد</string>
-    <string name="msg_error_input_wrongNumberUser">نام کاربری نمیتواند تنها از اعداد باشد</string>
-    <string name="msg_error_input_publicName_notMatch">لطفا از حروف و اعداد انگلیسی استفاده کنید</string>
-    <string name="msg_error_input_wrongUnderLineUser">استفاده پشت سر هم از کاراکترهای نقطه و یا آندرلاین، مجاز نیست</string>
-    <string name="msg_error_List">خطایی رخ داده است … دوباره تلاش کنید</string>
+    <string name="msg_error_input_empty_cityName">نام شهر نمی‌تواند خالی باشد</string>
+    <string name="msg_error_input_empty_latLng">طول و عرض جغرافیایی نمی‌تواند خالی باشد</string>
 
     <string name="empty" />
-
-    <string name="lbl_save">ذخیره کردن</string>
-    <string name="lbl_share">اشتراک گذاری</string>
-    <string name="lbl_report">گزارش و فیدبک</string>
-    <string name="lbl_Btn_retry">دوباره</string>
-    <string name="lbl_CategoryGo">رفتن به دسته </string>
-
+    <string name="lbl_Lat">طول جغرافیایی</string>
+    <string name="lbl_Lng">عرض جغرافیایی</string>
+    <string name="lbl_search">جستجو</string>
+    <string name="lbl_TempUnit">°C</string>
+    <string name="lbl_SearchByCityName">مثلا مشهد</string>
+    <string name="lbl_SearchByCityLat">36.3419998</string>
+    <string name="lbl_SearchByCityLng">59.4777647</string>
 </resources>

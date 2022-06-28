@@ -4,9 +4,12 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import ir.pourahmadi.weather.domain.common.base.BaseResult
 import ir.pourahmadi.weather.domain.common.error.ErrorEntity
-import ir.pourahmadi.weather.domain.model.Wearher.WearherListModel
-import ir.pourahmadi.weather.domain.use_case.WearherUseCase
+import ir.pourahmadi.weather.domain.model.news.WeatherModel
+import ir.pourahmadi.weather.domain.use_case.WeatherUseCase
 import dagger.hilt.android.lifecycle.HiltViewModel
+import ir.pourahmadi.weather.data.remote.dto.weather.WeatherRequest
+import kotlinx.coroutines.Job
+import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.collect
@@ -16,28 +19,29 @@ import javax.inject.Inject
 
 @HiltViewModel
 class HomeViewModel @Inject constructor(
-    private val WearherUseCase: WearherUseCase
+    private val useCase: WeatherUseCase
 ) : ViewModel() {
-    private val state = MutableStateFlow<WearherState>(WearherState.Init)
-    val mState: StateFlow<WearherState> get() = state
+    private val state = MutableStateFlow<WeatherState>(WeatherState.Init)
+    val mState: StateFlow<WeatherState> get() = state
 
-    var WearherPage = -1
-    var WearherResponse: MutableList<WearherListModel>? = null
+    var WeatherPage = -1
+    var WeatherResponse: WeatherModel? = null
 
+    private var searchJob: Job? = null
 
     private fun setLoading() {
-        state.value = WearherState.IsLoading(true)
+        state.value = WeatherState.IsLoading(true)
     }
 
     private fun hideLoading() {
-        state.value = WearherState.IsLoading(false)
+        state.value = WeatherState.IsLoading(false)
     }
 
 
-    fun getWearherList(url: String) {
-        WearherPage++
+    fun getWeatherList(request: WeatherRequest) {
+        WeatherPage++
         viewModelScope.launch {
-            WearherUseCase.getWearherList(url, WearherPage)
+            useCase.getWeatherList(request)
                 .onStart {
                     setLoading()
                 }
@@ -48,44 +52,69 @@ class HomeViewModel @Inject constructor(
         }
 
     }
+    private fun resultCheckCityNameHandle(result: BaseResult<Unit>) {
+        when (result) {
+            is BaseResult.Success -> state.value = WeatherState.Success
+            is BaseResult.NetworkError -> state.value = handleError(result.error)
+            is BaseResult.GeneralError -> state.value = WeatherState.ShowResIdToast(result.redId)
+        }
+    }
 
-    private fun resultHandle(result: BaseResult<List<WearherListModel>>) {
+    private fun resultHandle(result: BaseResult<WeatherModel>) {
         when (result) {
             is BaseResult.Success -> {
-                if (!result.value.isNullOrEmpty())
-                    if (WearherResponse == null) {
-                        WearherResponse = result.value as MutableList<WearherListModel>
+                    if (WeatherResponse == null) {
+                        WeatherResponse = result.value
                     } else {
-                        val oldData = WearherResponse
-                        val newData = result.value as MutableList<WearherListModel>
-                        oldData?.addAll(newData)
+                        val oldData = WeatherResponse
+                        WeatherResponse = result.value
                     }
 
 
-                state.value = WearherState.SuccessWearherList((WearherResponse ?: result.value)!!)
+                state.value = WeatherState.SuccessWeatherList((WeatherResponse ?: result.value)!!)
             }
             is BaseResult.NetworkError -> state.value = handleError(result.error)
-            is BaseResult.GeneralError -> state.value = WearherState.ShowResIdToast(result.redId)
+            is BaseResult.GeneralError -> state.value = WeatherState.ShowResIdToast(result.redId)
         }
     }
 
-    private fun handleError(errorEntity: ErrorEntity): WearherState {
+    private fun handleError(errorEntity: ErrorEntity): WeatherState {
         return when (errorEntity) {
-            is ErrorEntity.FromServer -> WearherState.ShowToast(errorEntity.error!!.m)
-            is ErrorEntity.AccessDenied -> WearherState.ShowResIdToast(errorEntity.redId)
-            is ErrorEntity.Network -> WearherState.ShowResIdToast(errorEntity.redId)
-            is ErrorEntity.NotFound -> WearherState.ShowResIdToast(errorEntity.redId)
-            is ErrorEntity.ServiceUnavailable -> WearherState.ShowResIdToast(errorEntity.redId)
-            is ErrorEntity.Unknown -> WearherState.ShowResIdToast(errorEntity.redId)
+            is ErrorEntity.FromServer -> WeatherState.ShowToast(errorEntity.error.toString())
+            is ErrorEntity.AccessDenied -> WeatherState.ShowResIdToast(errorEntity.redId)
+            is ErrorEntity.Network -> WeatherState.ShowResIdToast(errorEntity.redId)
+            is ErrorEntity.NotFound -> WeatherState.ShowResIdToast(errorEntity.redId)
+            is ErrorEntity.ServiceUnavailable -> WeatherState.ShowResIdToast(errorEntity.redId)
+            is ErrorEntity.Unknown -> WeatherState.ShowResIdToast(errorEntity.redId)
         }
     }
+
+    fun checkCityName(
+        cityName: String
+    ) {
+        searchJob?.cancel()
+        searchJob = viewModelScope.launch {
+            delay(2000L)
+            useCase.checkCityName(
+                cityName = cityName
+            )
+                .onStart {
+                    setLoading()
+                }
+                .collect { baseResult ->
+                    hideLoading()
+                    resultCheckCityNameHandle(baseResult)
+                }
+        }
+    }
+
 }
 
-sealed class WearherState {
-    object Init : WearherState()
-    data class IsLoading(val isLoading: Boolean) : WearherState()
-    data class ShowToast(val message: String) : WearherState()
-    object Success : WearherState()
-    data class SuccessWearherList(val mModel: List<WearherListModel>) : WearherState()
-    data class ShowResIdToast(val resId: Int) : WearherState()
+sealed class WeatherState {
+    object Init : WeatherState()
+    data class IsLoading(val isLoading: Boolean) : WeatherState()
+    data class ShowToast(val message: String) : WeatherState()
+    object Success : WeatherState()
+    data class SuccessWeatherList(val mModel: WeatherModel) : WeatherState()
+    data class ShowResIdToast(val resId: Int) : WeatherState()
 }

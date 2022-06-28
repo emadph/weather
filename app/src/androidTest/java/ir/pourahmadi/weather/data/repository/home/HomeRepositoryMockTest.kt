@@ -4,13 +4,11 @@ import com.google.common.truth.Truth.assertThat
 import ir.pourahmadi.weather.data.local.Database
 import ir.pourahmadi.weather.data.remote.dto.category.TopicResponse
 import ir.pourahmadi.weather.domain.common.base.BaseResult
-import ir.pourahmadi.weather.domain.repository.TopicRepository
 import ir.pourahmadi.weather.utils.convertJsonToModel
 import ir.pourahmadi.weather.utils.enqueueResponse
 import dagger.hilt.android.testing.HiltAndroidRule
 import dagger.hilt.android.testing.HiltAndroidTest
 import kotlinx.coroutines.ExperimentalCoroutinesApi
-import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.runBlocking
 import mockwebserver3.MockWebServer
 import org.junit.*

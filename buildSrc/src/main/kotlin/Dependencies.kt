@@ -5,7 +5,7 @@ import org.gradle.kotlin.dsl.provideDelegate
 
 object Dependencies {
 
-    const val testInstrumentRunner = "ir.pourahmadi.wearher.HiltTestRunner"
+    const val testInstrumentRunner = "ir.pourahmadi.Weather.HiltTestRunner"
     const val androidGradlePlugin = "com.android.tools.build:gradle:${Versions.androidGradle}"
     const val material = "com.google.android.material:material:${Versions.material}"
 

@@ -15,6 +15,10 @@ import ir.pourahmadi.weather.presentation.common.invisible
 import ir.pourahmadi.weather.presentation.common.visible
 import java.io.IOException
 
+fun <K, V> Map<K, V?>.filterNotNullValues(): Map<K, V> =
+    mapNotNull { (key, value) -> value?.let { key to it } }.toMap()
+
+
 fun getJsonDataFromAsset(context: Context, fileName: String): String? {
     val jsonString: String
     try {

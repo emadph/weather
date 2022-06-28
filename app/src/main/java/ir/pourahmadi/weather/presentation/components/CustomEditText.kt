@@ -39,6 +39,13 @@ class CustomEditText @JvmOverloads constructor(
                 R.styleable.CustomEditText_showError,
                 false
             )
+            val setHint = resources.getText(
+                typedArray
+                    .getResourceId(
+                        R.styleable.CustomEditText_setHintText,
+                        R.string.empty
+                    )
+            )
 
 
             when (showError) {
@@ -51,6 +58,7 @@ class CustomEditText @JvmOverloads constructor(
                 }
             }
 
+            edtCustome.hint=setHint
             tvCustomeError.text = setErrorText
 
             typedArray.recycle()
@@ -69,6 +77,9 @@ class CustomEditText @JvmOverloads constructor(
 
     fun setSelection(text: String) {
         edtCustome.setSelection(text.length)
+    }
+    fun setHint(text: String) {
+        edtCustome.hint = text
     }
 
     fun getText(): String {

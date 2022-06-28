@@ -2,7 +2,7 @@ package ir.pourahmadi.weather.data.local.entity
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey
-import ir.pourahmadi.weather.domain.model.topic.TopicModel
+import ir.pourahmadi.weather.domain.model.news.TopicModel
 import ir.pourahmadi.weather.presentation.common.imagesToList
 
 

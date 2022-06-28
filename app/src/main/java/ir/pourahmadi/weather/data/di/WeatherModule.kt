@@ -3,45 +3,47 @@ package ir.pourahmadi.weather.data.di
 import android.content.Context
 import ir.pourahmadi.weather.data.di.common.NetworkModule
 import ir.pourahmadi.weather.data.local.Database
-import ir.pourahmadi.weather.data.remote.api.WearherListApi
-import ir.pourahmadi.weather.data.repository.WearherRepositoryImpl
+import ir.pourahmadi.weather.data.remote.api.WeatherListApi
+import ir.pourahmadi.weather.data.repository.WeatherRepositoryImpl
 import ir.pourahmadi.weather.domain.common.error.ErrorHandler
-import ir.pourahmadi.weather.domain.repository.WearherRepository
-import ir.pourahmadi.weather.domain.use_case.WearherUseCase
+import ir.pourahmadi.weather.domain.repository.WeatherRepository
+import ir.pourahmadi.weather.domain.use_case.WeatherUseCase
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.android.qualifiers.ApplicationContext
 import dagger.hilt.components.SingletonComponent
+import ir.pourahmadi.weather.utils.Validate
 import retrofit2.Retrofit
 import javax.inject.Singleton
 
 @Module(includes = [NetworkModule::class])
 @InstallIn(SingletonComponent::class)
-class WearherModule {
+class WeatherModule {
 
     @Singleton
     @Provides
-    fun provideWearherApi(retrofit: Retrofit): WearherListApi {
-        return retrofit.create(WearherListApi::class.java)
+    fun provideWeatherApi(retrofit: Retrofit): WeatherListApi {
+        return retrofit.create(WeatherListApi::class.java)
     }
 
     @Singleton
     @Provides
-    fun provideWearherUseCase(
-        repository: WearherRepository,
-        @ApplicationContext context: Context
-    ): WearherUseCase {
-        return WearherUseCase(context, repository)
+    fun provideWeatherUseCase(
+        repository: WeatherRepository,
+        @ApplicationContext context: Context,
+        validation: Validate
+    ): WeatherUseCase {
+        return WeatherUseCase(context, repository,validation)
     }
 
     @Singleton
     @Provides
-    fun provideWearherRepository(
-        api: WearherListApi,
+    fun provideWeatherRepository(
+        api: WeatherListApi,
         errorHandler: ErrorHandler,
         db: Database,
-    ): WearherRepository {
-        return WearherRepositoryImpl(api, errorHandler, db.WearherDao)
+    ): WeatherRepository {
+        return WeatherRepositoryImpl(api, errorHandler, db.WeatherDao)
     }
 }

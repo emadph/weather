@@ -2,11 +2,9 @@ package ir.pourahmadi.weather.data.repository.home
 
 import com.google.common.truth.Truth.assertThat
 import ir.pourahmadi.weather.domain.common.base.BaseResult
-import ir.pourahmadi.weather.domain.repository.TopicRepository
 import dagger.hilt.android.testing.HiltAndroidRule
 import dagger.hilt.android.testing.HiltAndroidTest
 import kotlinx.coroutines.ExperimentalCoroutinesApi
-import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.runBlocking
 import org.junit.After
 import org.junit.Before

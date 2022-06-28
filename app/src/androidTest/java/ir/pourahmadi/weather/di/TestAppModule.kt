@@ -8,14 +8,11 @@ import ir.pourahmadi.weather.data.di.common.CacheInterceptor
 import ir.pourahmadi.weather.data.di.common.RequestInterceptor
 import ir.pourahmadi.weather.data.local.Database
 import ir.pourahmadi.weather.data.remote.api.LoginApi
-import ir.pourahmadi.weather.data.remote.api.WearherListApi
+import ir.pourahmadi.weather.data.remote.api.WeatherListApi
 import ir.pourahmadi.weather.data.remote.api.ProfileApi
-import ir.pourahmadi.weather.data.remote.api.TopicApi
-import ir.pourahmadi.weather.data.repository.WearherRepositoryImpl
-import ir.pourahmadi.weather.data.repository.TopicRepositoryImpl
+import ir.pourahmadi.weather.data.repository.WeatherRepositoryImpl
 import ir.pourahmadi.weather.domain.common.error.ErrorHandler
-import ir.pourahmadi.weather.domain.repository.WearherRepository
-import ir.pourahmadi.weather.domain.repository.TopicRepository
+import ir.pourahmadi.weather.domain.repository.WeatherRepository
 import ir.pourahmadi.weather.utils.SharedPrefs
 import ir.pourahmadi.weather.utils.ignoreAllSSLErrors
 import dagger.Module
@@ -51,46 +48,7 @@ class TestAppModule {
         return GeneralErrorHandlerImpl()
     }
 
-    @Singleton
-    @Provides
-    @Named("LoginRepository")
-    fun provideLoginRepository(
-        @Named("LoginApi")
-        loginApi: LoginApi,
-        @Named("ErrorHandler")
-        errorHandler: ErrorHandler,
-        @Named("test_db")
-        db: Database,
-        @Named("SharedPrefs")
-        shareP: SharedPrefs,
-    ): LoginRepository {
-        return LoginRepositoryImpl(loginApi, errorHandler, db.userDao, shareP)
-    }
 
-    @Singleton
-    @Provides
-    @Named("LoginApi")
-    fun provideLoginApi(
-        @Named("Retrofit")
-        retrofit: Retrofit
-    ): LoginApi {
-        return retrofit.create(LoginApi::class.java)
-    }
-
-    //---------------------------------
-    @Singleton
-    @Provides
-    @Named("HomeRepository")
-    fun provideHomeRepository(
-        @Named("HomeApi")
-        api: TopicApi,
-        @Named("ErrorHandler")
-        errorHandler: ErrorHandler,
-        @Named("test_db")
-        db: Database
-    ): TopicRepository {
-        return TopicRepositoryImpl(api, errorHandler, db.commonDao)
-    }
 
     @Singleton
     @Provides
@@ -105,24 +63,24 @@ class TestAppModule {
     //---------------------------------
     @Singleton
     @Provides
-    @Named("WearherRepository")
-    fun provideWearherRepository(
-        @Named("WearherListApi")
-        api: WearherListApi,
+    @Named("WeatherRepository")
+    fun provideWeatherRepository(
+        @Named("WeatherListApi")
+        api: WeatherListApi,
         @Named("ErrorHandler")
         errorHandler: ErrorHandler
-    ): WearherRepository {
-        return WearherRepositoryImpl(api, errorHandler)
+    ): WeatherRepository {
+        return WeatherRepositoryImpl(api, errorHandler)
     }
 
     @Singleton
     @Provides
-    @Named("WearherListApi")
-    fun provideWearherListApi(
+    @Named("WeatherListApi")
+    fun provideWeatherListApi(
         @Named("Retrofit")
         retrofit: Retrofit
-    ): WearherListApi {
-        return retrofit.create(WearherListApi::class.java)
+    ): WeatherListApi {
+        return retrofit.create(WeatherListApi::class.java)
     }
 
     //-----------------------------

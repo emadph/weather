@@ -4,8 +4,8 @@ import androidx.room.Entity
 import androidx.room.PrimaryKey
 
 @Entity
-data class WearherListCacheEntity(
+data class WeatherListCacheEntity(
     @PrimaryKey
-    var url: String,
-    var response: String? = null
+    var id: Int,
+    var cityName: String
 )

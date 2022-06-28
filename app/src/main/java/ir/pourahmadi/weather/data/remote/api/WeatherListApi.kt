@@ -1,13 +1,12 @@
 package ir.pourahmadi.weather.data.remote.api
 
-import ir.pourahmadi.weather.data.remote.dto.Wearher.WearherLIstResponse
+import ir.pourahmadi.weather.data.remote.dto.weather.WeatherBaseResponse
 import retrofit2.Response
-import retrofit2.http.GET
-import retrofit2.http.Url
+import retrofit2.http.*
 
-interface WearherListApi {
+interface WeatherListApi {
 
-    @GET
-    suspend fun getWearherList(@Url url: String): Response<List<WearherLIstResponse>>
+    @GET("weather")
+    suspend fun getWeatherList(@QueryMap data: Map<String, String>): Response<WeatherBaseResponse>
 
 }

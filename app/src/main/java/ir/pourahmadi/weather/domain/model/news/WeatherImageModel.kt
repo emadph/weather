@@ -1,6 +1,6 @@
-package ir.pourahmadi.weather.domain.model.Wearher
+package ir.pourahmadi.weather.domain.model.news
 
-data class WearherImageModel(
+data class WeatherImageModel(
     val url: String? = null,
     val title: String? = null,
     val id: Int = 0

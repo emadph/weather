@@ -3,7 +3,6 @@ package ir.pourahmadi.weather.data.di.common
 import android.content.Context
 import ir.pourahmadi.weather.BuildConfig
 import ir.pourahmadi.weather.utils.NetworkConnectionInterceptor
-import ir.pourahmadi.weather.utils.SharedPrefs
 import ir.pourahmadi.weather.utils.ignoreAllSSLErrors
 import dagger.Module
 import dagger.Provides
@@ -75,8 +74,8 @@ object NetworkModule {
     }
 
     @Provides
-    fun provideRequestInterceptor(prefs: SharedPrefs): RequestInterceptor {
-        return RequestInterceptor(prefs)
+    fun provideRequestInterceptor(): RequestInterceptor {
+        return RequestInterceptor()
     }
 
 }

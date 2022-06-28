@@ -2,8 +2,6 @@ package ir.pourahmadi.weather.data.local
 
 import androidx.test.filters.SmallTest
 import com.google.common.truth.Truth.assertThat
-import ir.pourahmadi.weather.data.local.dao.UserDao
-import ir.pourahmadi.weather.data.local.entity.UserEntity
 import dagger.hilt.android.testing.HiltAndroidRule
 import dagger.hilt.android.testing.HiltAndroidTest
 import kotlinx.coroutines.ExperimentalCoroutinesApi

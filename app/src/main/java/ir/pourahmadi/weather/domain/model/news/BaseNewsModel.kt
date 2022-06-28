@@ -1,7 +1,7 @@
-package ir.pourahmadi.weather.domain.model.Wearher
+package ir.pourahmadi.weather.domain.model.news
 
 
-open class BaseWearherModel(
+open class BaseWeatherModel(
     open var desc: String? = null,
     open var id: Int = 0,
     open var publishDate: String? = null,

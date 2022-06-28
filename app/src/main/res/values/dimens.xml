@@ -1,6 +1,6 @@
 <resources>
+    <dimen name="text_size_28">28sp</dimen>
     <dimen name="text_size_20">20sp</dimen>
-    <dimen name="text_size_18">18sp</dimen>
     <dimen name="text_size_16">16sp</dimen>
     <dimen name="text_size_14">14sp</dimen>
     <dimen name="text_size_12">12sp</dimen>
@@ -17,5 +17,7 @@
     <dimen name="size_3dp">3dp</dimen>
     <dimen name="size_2dp">2dp</dimen>
     <dimen name="size_1dp">1dp</dimen>
+    <dimen name="size_42dp">42dp</dimen>
+    <dimen name="size_52dp">52dp</dimen>
     <!-- Default screen margins, per the Android Design guidelines. -->
 </resources>

@@ -11,8 +11,6 @@
     <color name="bg_button">#D50000</color>
     <color name="bg_selected_subTab">#FEE9E9</color>
     <color name="bg_unSelected_subTab">#F2F2F2</color>
-    <color name="buttons_black_pressed">#ffffff</color>
-    <color name="black_button_text_color_selector">#ffffff</color>
 
     <color name="error">#FF2424</color>
     <color name="title">#202124</color>

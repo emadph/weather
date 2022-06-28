@@ -10,32 +10,25 @@
     </declare-styleable>
 
     <declare-styleable name="CustomToolbar">
-        <attr name="setCenterText" format="reference" />
-        <attr name="setRightText" format="reference" />
-        <attr name="setBigRightText" format="reference" />
 
-        <attr name="showBack" format="boolean" />
         <attr name="showCenterLogo" format="boolean" />
-        <attr name="showIconProfile" format="boolean" />
-        <attr name="showMore" format="boolean" />
-        <attr name="showMenu" format="boolean" />
-        <attr name="showNotification" format="boolean" />
-        <attr name="showSetting" format="boolean" />
-        <attr name="showCenterText" format="boolean" />
-        <attr name="showRightText" format="boolean" />
-        <attr name="showBigRightText" format="boolean" />
-
-        <attr name="DrawableNotification" format="reference" />
-        <attr name="DrawableIconProfile" format="reference" />
         <attr name="DrawableLogo" format="reference" />
-
 
     </declare-styleable>
     <declare-styleable name="CustomEditText">
         <attr name="setErrorText" format="reference" />
+        <attr name="setHintText" format="reference" />
         <attr name="showSuccess" format="boolean" />
         <attr name="showError" format="boolean" />
 
+    </declare-styleable>
+    <declare-styleable name="CustomItemNews">
+        <attr name="setTitleText" format="reference" />
+        <attr name="setCategoryTitleText" format="reference" />
+        <attr name="setDateText" format="reference" />
+        <attr name="setDescText" format="reference" />
+
+        <attr name="DrawableIconType" format="reference" />
     </declare-styleable>
 
 </resources>

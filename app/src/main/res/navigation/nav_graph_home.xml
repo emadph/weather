@@ -2,18 +2,12 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/navigation_home"
-    app:startDestination="@id/HomeParentFragment">
+    app:startDestination="@id/HomeFragment">
 
-    <dialog
-        android:id="@+id/WearherMoreBottomSheet"
-        android:name="ir.pourahmadi.weather.presentation.ui.main.category.sheetComponent.WearherMoreBottomSheet"
-        android:label="WearherMoreBottomSheet">
-
-    </dialog>
 
     <fragment
-        android:id="@+id/HomeParentFragment"
-        android:name="ir.pourahmadi.weather.presentation.ui.main.home.fragment.HomeParentFragment"
+        android:id="@+id/HomeFragment"
+        android:name="ir.pourahmadi.weather.presentation.ui.main.home.fragment.HomeFragment"
         android:label="HomeFragment">
 
     </fragment>

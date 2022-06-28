@@ -1,66 +1,41 @@
 package ir.pourahmadi.weather.domain.use_case
 
 import android.content.Context
+import ir.pourahmadi.weather.data.remote.dto.weather.WeatherRequest
 import ir.pourahmadi.weather.domain.common.base.BaseResult
-import ir.pourahmadi.weather.domain.model.Wearher.WearherListModel
-import ir.pourahmadi.weather.domain.repository.WearherRepository
+import ir.pourahmadi.weather.domain.model.news.WeatherModel
+import ir.pourahmadi.weather.domain.repository.WeatherRepository
 import ir.pourahmadi.weather.utils.NetworkUtils
+import ir.pourahmadi.weather.utils.Validate
 import kotlinx.coroutines.flow.Flow
-import java.net.URI
+import kotlinx.coroutines.flow.flow
 import javax.inject.Inject
 
-class WearherUseCase @Inject constructor(
+class WeatherUseCase @Inject constructor(
     private val context: Context,
-    private val repository: WearherRepository
+    private val repository: WeatherRepository,
+    private val validation: Validate
+
 ) {
-    suspend fun getWearherList(url: String, pageIndex: Int): Flow<BaseResult<List<WearherListModel>>> {
+
+    suspend fun checkCityName(
+        cityName: String
+    ): Flow<BaseResult<Unit>> {
+        val (resultBoolean, resultResId) = validation.validateCityName(
+            cityName = cityName
+        )
+        if (!resultBoolean)
+            return flow { emit(BaseResult.GeneralError(resultResId!!)) }
+
+        return repository.checkCityName(cityName)
+    }
+
+
+
+    suspend fun getWeatherList(request: WeatherRequest): Flow<BaseResult<WeatherModel>> {
         return if (!NetworkUtils.isNetworkAvailable(context)) {
-            repository.getWearherListOffline(increaseIndex(url, pageIndex))
+            repository.getWeatherListOffline(request)
         } else
-            repository.getWearherList(increaseIndex(url, pageIndex))
+            repository.getWeatherList(request)
     }
-
-    private fun increaseIndex(url: String, pageIndex: Int): String {
-        /* if (pageIndex == 1) return url*/
-
-        val baseUrl = getBaseUrl(url)
-        val newPageParam = "page=$pageIndex"
-        return appendUri(baseUrl, newPageParam)
-    }
-
-    private fun appendUri(uri: String, appendQuery: String): String {
-        val oldUri = URI(uri)
-        var newQuery = oldUri.query
-        if (newQuery == null) {
-            newQuery = appendQuery
-        } else {
-            newQuery += "&$appendQuery"
-        }
-        return URI(
-            oldUri.scheme, oldUri.authority,
-            oldUri.path, newQuery, oldUri.fragment
-        ).toString()
-    }
-
-    private fun getBaseUrl(url: String): String {
-        val uri = URI(url)
-        return URI(
-            uri.scheme,
-            uri.authority,
-            uri.path,
-            null,  // Ignore the query part of the input url
-            uri.fragment
-        ).toString()
-    }
-
-/*
-    private fun getIndex(url: String): Int {
-        val url = url.toHttpUrlOrNull()
-        var target = 0
-        if (url != null) {
-            target = url.queryParameter("page")?.toInt()!!
-        }
-        return target
-    }
-*/
 }

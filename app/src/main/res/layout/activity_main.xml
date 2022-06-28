@@ -4,6 +4,15 @@
     android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+    <ir.pourahmadi.weather.presentation.components.CustomToolbar
+        android:id="@+id/trMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_scrollFlags="scroll|enterAlways"
+        app:showCenterLogo="true" />
 
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/nav_host_fragment_activity_main"
@@ -11,28 +20,12 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         app:defaultNavHost="true"
-        app:layout_constraintBottom_toTopOf="@id/nav_view"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:navGraph="@navigation/nav_graph_main" />
-
-
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/nav_view"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="0dp"
-        android:layout_marginStart="0dp"
-        android:background="?android:attr/windowBackground"
-        android:theme="@style/Widget.BottomNavigationView"
-        app:elevation="4dp"
-        app:itemIconTint="@drawable/selector_stock_bottom_nav_view"
-        app:itemTextColor="@drawable/selector_stock_bottom_nav_view"
-        app:labelVisibilityMode="labeled"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:menu="@menu/bottom_nav_menu" />
+        app:layout_constraintTop_toBottomOf="@+id/trMain"
+        app:navGraph="@navigation/nav_graph_main" />
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,8 +1,8 @@
-package ir.pourahmadi.weather.data.repository.Wearher
+package ir.pourahmadi.weather.data.repository.Weather
 
 import com.google.common.truth.Truth.assertThat
 import ir.pourahmadi.weather.domain.common.base.BaseResult
-import ir.pourahmadi.weather.domain.repository.WearherRepository
+import ir.pourahmadi.weather.domain.repository.WeatherRepository
 import dagger.hilt.android.testing.HiltAndroidRule
 import dagger.hilt.android.testing.HiltAndroidTest
 import kotlinx.coroutines.ExperimentalCoroutinesApi
@@ -19,13 +19,13 @@ import javax.inject.Named
 
 @ExperimentalCoroutinesApi
 @HiltAndroidTest
-class WearherRepositoryRealApiTest {
+class WeatherRepositoryRealApiTest {
     @get:Rule
     var hiltRule = HiltAndroidRule(this)
 
     @Inject
-    @Named("WearherRepository")
-    lateinit var repo: WearherRepository
+    @Named("WeatherRepository")
+    lateinit var repo: WeatherRepository
 
     @Before
     fun setup() {
@@ -37,10 +37,10 @@ class WearherRepositoryRealApiTest {
     }
 
     @Test
-    fun getWearherList_onTestApi_true() = runBlocking {
-        var url = "https://borsa.ir/Wearherapi/api/v1/Posts/topics/2?page=1"
+    fun getWeatherList_onTestApi_true() = runBlocking {
+        var url = "https://borsa.ir/Weatherapi/api/v1/Posts/topics/2?page=1"
         val index = 1
-        repo.getWearherList(increaseIndex(url, index))
+        repo.getWeatherList(increaseIndex(url, index))
             .collect { baseResult ->
                 assertThat(baseResult is BaseResult.Success).isTrue()
             }

@@ -4,155 +4,16 @@
     android:layout_width="match_parent"
     android:layout_height="?attr/actionBarSize">
 
-    <TextView
-        android:id="@+id/tvToolbarTitleCenter"
-        style="@style/TextTitlePrimaryBoldPeyda"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:lines="1"
-        android:textColor="@color/title"
-        android:textSize="@dimen/text_size_20"
-        android:textStyle="bold"
-        android:visibility="gone"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/glEndCenter"
-        app:layout_constraintStart_toStartOf="@+id/glStartCenter"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/tvToolbarTitle"
-        style="@style/TextTitlePrimaryBoldPeyda"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:lines="1"
-        android:textColor="@color/title"
-        android:textSize="@dimen/text_size_20"
-        android:textStyle="bold"
-        android:visibility="gone"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/glEndCenter"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/tvToolbarSubTitle"
-        style="@style/TextTitlePrimary"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:lines="1"
-        android:textColor="@color/title"
-        android:textStyle="bold"
-        android:visibility="gone"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/glEndCenter"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <androidx.appcompat.widget.AppCompatImageView
-        android:id="@+id/imgToolbarBack"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:visibility="gone"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/glEnd"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_icon_back" />
-
-    <androidx.appcompat.widget.AppCompatImageView
-        android:id="@+id/imgToolbarProfile"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:visibility="gone"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/glEnd"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_circle_person" />
 
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/imgToolbarHeaderLogo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/glEndCenter"
-        app:layout_constraintStart_toStartOf="@+id/glStartCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ic_header_logo" />
 
-    <androidx.appcompat.widget.AppCompatImageView
-        android:id="@+id/imgToolbarMore"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:visibility="gone"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/glStart"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_more" />
-
-    <androidx.appcompat.widget.AppCompatImageView
-        android:id="@+id/imgToolbarMenu"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:visibility="gone"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/glStart"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_menu" />
-
-    <androidx.appcompat.widget.AppCompatImageView
-        android:id="@+id/imgToolbarNotification"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:visibility="gone"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/glStart"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_notification_new" />
-
-    <androidx.appcompat.widget.AppCompatImageView
-        android:id="@+id/imgToolbarSetting"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:visibility="gone"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/glStart"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_setting" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/glCenter"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.50" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/glEnd"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_end="16dp" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/glEndCenter"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_end="56dp" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/glStart"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_begin="16dp" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/glStartCenter"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_begin="56dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -47,7 +47,7 @@ class UiCardsFragmentTest {
         }
         onView(
             Matchers.allOf(
-                withId(R.id.tvWearherSimpleCategoryTitle),
+                withId(R.id.tvWeatherSimpleCategoryTitle),
                 isDisplayed()
             )
         )
@@ -55,7 +55,7 @@ class UiCardsFragmentTest {
     }
 
     @Test
-    fun checkPropertyItemWearherCardSimple() {
+    fun checkPropertyItemWeatherCardSimple() {
         val navController = Mockito.mock(NavController::class.java)
 
         launchFragmentInHiltContainer<UiCardsFragment> {
@@ -64,27 +64,27 @@ class UiCardsFragmentTest {
 
         /* check TextView Size Property */
         onView(
-            withIndex(withId(R.id.tvWearherSimpleCategoryTitle), 1)
+            withIndex(withId(R.id.tvWeatherSimpleCategoryTitle), 1)
         ).check(matches(withFontSize(text_size_12)))
         onView(
-            withIndex(withId(R.id.tvWearherSimpleDatePublish), 1)
+            withIndex(withId(R.id.tvWeatherSimpleDatePublish), 1)
         ).check(matches(withFontSize(text_size_10)))
         onView(
-            withIndex(withId(R.id.tvWearherSimpleTitle), 1)
+            withIndex(withId(R.id.tvWeatherSimpleTitle), 1)
         ).check(matches(withFontSize(text_size_16)))
         onView(
-            withIndex(withId(R.id.tvWearherSimpleBriefDesc), 1)
+            withIndex(withId(R.id.tvWeatherSimpleBriefDesc), 1)
         ).check(matches(withFontSize(text_size_12)))
 
 
         /* check TextView Color Property */
-        onView(withIndex(withId(R.id.tvWearherSimpleCategoryTitle), 1))
+        onView(withIndex(withId(R.id.tvWeatherSimpleCategoryTitle), 1))
             .check(matches(hasTextColor(R.color.title)))
-        onView(withIndex(withId(R.id.tvWearherSimpleDatePublish), 1))
+        onView(withIndex(withId(R.id.tvWeatherSimpleDatePublish), 1))
             .check(matches(hasTextColor(R.color.subTitle)))
-        onView(withIndex(withId(R.id.tvWearherSimpleTitle), 1))
+        onView(withIndex(withId(R.id.tvWeatherSimpleTitle), 1))
             .check(matches(hasTextColor(R.color.title)))
-        onView(withIndex(withId(R.id.tvWearherSimpleBriefDesc), 1))
+        onView(withIndex(withId(R.id.tvWeatherSimpleBriefDesc), 1))
             .check(matches(hasTextColor(R.color.subTitle)))
 
 
