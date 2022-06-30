@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">WeatherByPourahmadi</string>
+    <string name="app_name">هواشناس</string>
     <string name="button_text_ok">باشه</string>
 
     <string name="lbl_AdvanceWeatherSearch">جستجوی پیشرفته</string>

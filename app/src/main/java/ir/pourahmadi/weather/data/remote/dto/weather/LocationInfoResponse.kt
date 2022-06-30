@@ -1,8 +1,7 @@
 package ir.pourahmadi.weather.data.remote.dto.weather
 
 import com.google.gson.annotations.SerializedName
-import ir.pourahmadi.weather.domain.model.news.LocationInfoModel
-import ir.pourahmadi.weather.domain.model.news.MainWeatherInfoModel
+import ir.pourahmadi.weather.domain.model.weather.LocationInfoModel
 
 class LocationInfoResponse(
     @SerializedName("id") var id: Int,

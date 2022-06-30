@@ -7,6 +7,7 @@
     android:layout_height="match_parent"
     android:background="@color/white"
     android:layoutDirection="ltr"
+    android:fillViewport="true"
     android:padding="@dimen/size_16dp">
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -22,6 +23,7 @@
             android:imeOptions="actionSearch"
             android:inputType="text"
             android:maxLines="1"
+            android:layoutDirection="rtl"
             android:layout_marginTop="@dimen/size_16dp"
             android:textCursorDrawable="@null"
             app:layout_constraintEnd_toEndOf="parent"
@@ -29,6 +31,20 @@
             app:layout_constraintTop_toTopOf="parent"
             app:setHintText="@string/lbl_SearchByCityName"
             app:showError="false" />
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/pbCityNameSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/edtCityName"
+            app:layout_constraintTop_toTopOf="@+id/edtCityName"
+            app:layout_constraintStart_toStartOf="@+id/edtCityName"
+            app:lottie_autoPlay="true"
+            app:lottie_colorFilter="@color/bg_button"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/lf20_0vnbu79m" />
 
         <androidx.appcompat.widget.AppCompatCheckBox
             android:id="@+id/cbAdvanceSearch"
@@ -75,7 +91,6 @@
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <androidx.appcompat.widget.AppCompatTextView
-                    android:id="@+id/tvLblLng"
                     style="@style/TextTitlePrimary"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -150,88 +165,116 @@
             android:id="@+id/cslTempDetail"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_8dp"
+            android:paddingBottom="@dimen/size_32dp"
             android:visibility="gone"
-            app:layout_constraintVertical_bias="0"
+            android:background="@drawable/shape_background_temp_detail"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/crdAdcanceSearch">
+            app:layout_constraintTop_toBottomOf="@+id/crdAdcanceSearch"
+            app:layout_constraintVertical_bias="0">
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/tvTemp"
+                style="@style/TextTitlePrimaryBold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_16dp"
+                android:gravity="end|center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_88"
+                app:layout_constraintEnd_toStartOf="@+id/glCenter"
+                app:layout_constraintStart_toStartOf="@+id/glCenter"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/TextBodyPrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/size_32dp"
+                android:gravity="end|center"
+                android:text="@string/lbl_TempUnit"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="@+id/tvTemp"
+                app:layout_constraintStart_toEndOf="@id/tvTemp"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvWindType"
+                style="@style/TextBodyPrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_wind_view"
+                android:gravity="end|center"
+                android:textColor="@color/tempType"
+                android:textSize="@dimen/text_size_16"
+                app:layout_constraintBottom_toBottomOf="@+id/tvTemp"
+                app:layout_constraintEnd_toEndOf="@+id/tvTemp"
+                app:layout_constraintStart_toStartOf="@+id/tvTemp"
+                app:layout_constraintTop_toBottomOf="@+id/tvTemp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvTempMax"
                 style="@style/TextTitlePrimary"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/size_16dp"
                 android:gravity="end|center"
-                android:text="45"
-                android:textSize="@dimen/text_size_28"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <TextView
-                android:id="@+id/tvTempUnit"
-                style="@style/TextBodySecondary"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:gravity="end|center"
-                android:text="@string/lbl_TempUnit"
-                app:layout_constraintBottom_toTopOf="@+id/tvTemp"
-                app:layout_constraintStart_toEndOf="@id/tvTemp"
-                app:layout_constraintTop_toTopOf="@id/tvTemp" />
+                android:textColor="@color/white"
+                app:drawableEndCompat="@drawable/ic_max_temp"
+                app:layout_constraintEnd_toEndOf="@+id/tvTemp"
+                app:layout_constraintStart_toStartOf="@+id/glCenter"
+                app:layout_constraintTop_toBottomOf="@+id/tvWindType" />
 
 
-            <TextView
-                android:id="@+id/tvTempMax"
-                style="@style/TextBodyPrimary"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:gravity="end|center"
-                android:text="@string/lbl_TempUnit"
-                app:layout_constraintEnd_toEndOf="@+id/tvTempUnit"
-                app:layout_constraintHorizontal_bias="1"
-                app:layout_constraintStart_toEndOf="@+id/imgWeatherIcon"
-                app:layout_constraintTop_toTopOf="@id/imgWeatherIcon"
-                app:drawableEndCompat="@drawable/ic_max_temp" />
-
-            <TextView
+            <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/tvTempMin"
-                style="@style/TextBodyPrimary"
+                style="@style/TextTitlePrimary"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="end|center"
-                android:text="@string/lbl_TempUnit"
-                app:layout_constraintBottom_toBottomOf="@+id/imgWeatherIcon"
-                app:layout_constraintStart_toStartOf="@+id/tvTempMax"
-                app:layout_constraintTop_toBottomOf="@+id/tvTempMax"
-                app:drawableEndCompat="@drawable/ic_min_temp" />
+                android:textColor="@color/white"
+                app:drawableEndCompat="@drawable/ic_min_temp"
+                app:layout_constraintEnd_toEndOf="@+id/tvTemp"
+                app:layout_constraintStart_toStartOf="@+id/glCenter"
+                app:layout_constraintTop_toBottomOf="@+id/tvTempMax" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvCityName"
+                style="@style/TextTitlePrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_8dp"
+                android:gravity="end|center"
+                android:textColor="@color/white"
+                android:drawablePadding="@dimen/size_4dp"
+                app:layout_constraintEnd_toStartOf="@+id/glCenter"
+                app:layout_constraintStart_toStartOf="@+id/glCenter"
+                app:layout_constraintTop_toBottomOf="@+id/tvTempMin"
+                app:drawableStartCompat="@drawable/ic_location" />
 
             <androidx.appcompat.widget.AppCompatImageView
                 android:id="@+id/imgWeatherIcon"
-                android:layout_width="@dimen/size_60dp"
-                android:layout_height="@dimen/size_60dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:background="?attr/selectableItemBackgroundBorderless"
                 android:focusable="true"
                 android:scaleType="centerInside"
-                app:layout_constraintEnd_toStartOf="@+id/tvTemp"
-                app:layout_constraintTop_toBottomOf="@+id/tvTemp"
-                app:srcCompat="@drawable/ic_circle_person" />
+                app:layout_constraintBottom_toBottomOf="@+id/tvTempMin"
+                app:layout_constraintEnd_toStartOf="@+id/glCenter"
+                app:layout_constraintTop_toTopOf="@+id/tvTempMax" />
+
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/glCenter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.50" />
+
 
         </androidx.constraintlayout.widget.ConstraintLayout>
-        <com.airbnb.lottie.LottieAnimationView
-            android:id="@+id/pbHome"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_centerInParent="true"
-            app:layout_constraintBottom_toBottomOf="@+id/edtCityName"
-            app:layout_constraintTop_toTopOf="@+id/edtCityName"
-            app:layout_constraintStart_toStartOf="@+id/edtCityName"
-            app:lottie_autoPlay="true"
-            app:lottie_colorFilter="@color/bg_button"
-            app:lottie_loop="true"
-            app:lottie_rawRes="@raw/lf20_0vnbu79m" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.core.widget.NestedScrollView>

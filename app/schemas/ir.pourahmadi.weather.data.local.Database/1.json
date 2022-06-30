@@ -2,103 +2,11 @@
   "formatVersion": 1,
   "database": {
     "version": 1,
-    "identityHash": "8005ff3b9f7697bf71ce881327ffee41",
+    "identityHash": "5a6f27aae3801cbddf3cfaf305bd8d25",
     "entities": [
       {
-        "tableName": "HomeTopicsEntity",
-        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER NOT NULL, `defaultChildren` INTEGER, `link` TEXT, `images` TEXT, `description` TEXT, `title` TEXT NOT NULL, `parentId` INTEGER, `isMovable` INTEGER NOT NULL, `isRemovable` INTEGER NOT NULL, `x` INTEGER, `y` INTEGER, `priority` INTEGER NOT NULL, `topicTypesId` INTEGER NOT NULL, PRIMARY KEY(`id`))",
-        "fields": [
-          {
-            "fieldPath": "id",
-            "columnName": "id",
-            "affinity": "INTEGER",
-            "notNull": true
-          },
-          {
-            "fieldPath": "defaultChildren",
-            "columnName": "defaultChildren",
-            "affinity": "INTEGER",
-            "notNull": false
-          },
-          {
-            "fieldPath": "link",
-            "columnName": "link",
-            "affinity": "TEXT",
-            "notNull": false
-          },
-          {
-            "fieldPath": "images",
-            "columnName": "images",
-            "affinity": "TEXT",
-            "notNull": false
-          },
-          {
-            "fieldPath": "description",
-            "columnName": "description",
-            "affinity": "TEXT",
-            "notNull": false
-          },
-          {
-            "fieldPath": "title",
-            "columnName": "title",
-            "affinity": "TEXT",
-            "notNull": true
-          },
-          {
-            "fieldPath": "parentId",
-            "columnName": "parentId",
-            "affinity": "INTEGER",
-            "notNull": false
-          },
-          {
-            "fieldPath": "isMovable",
-            "columnName": "isMovable",
-            "affinity": "INTEGER",
-            "notNull": true
-          },
-          {
-            "fieldPath": "isRemovable",
-            "columnName": "isRemovable",
-            "affinity": "INTEGER",
-            "notNull": true
-          },
-          {
-            "fieldPath": "x",
-            "columnName": "x",
-            "affinity": "INTEGER",
-            "notNull": false
-          },
-          {
-            "fieldPath": "y",
-            "columnName": "y",
-            "affinity": "INTEGER",
-            "notNull": false
-          },
-          {
-            "fieldPath": "priority",
-            "columnName": "priority",
-            "affinity": "INTEGER",
-            "notNull": true
-          },
-          {
-            "fieldPath": "topicTypesId",
-            "columnName": "topicTypesId",
-            "affinity": "INTEGER",
-            "notNull": true
-          }
-        ],
-        "primaryKey": {
-          "columnNames": [
-            "id"
-          ],
-          "autoGenerate": false
-        },
-        "indices": [],
-        "foreignKeys": []
-      },
-      {
-        "tableName": "WeatherListCacheEntity",
-        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER NOT NULL, `cityName` TEXT NOT NULL, PRIMARY KEY(`id`))",
+        "tableName": "WeatherEntity",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER NOT NULL, `cityName` TEXT NOT NULL, `cityLng` TEXT NOT NULL, `cityLat` TEXT NOT NULL, `temperature` TEXT NOT NULL, `maxTemperature` TEXT NOT NULL, `minTemperature` TEXT NOT NULL, `weatherParametersType` TEXT NOT NULL, `weatherIcon` TEXT NOT NULL, PRIMARY KEY(`id`))",
         "fields": [
           {
             "fieldPath": "id",
@@ -109,6 +17,48 @@
           {
             "fieldPath": "cityName",
             "columnName": "cityName",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "cityLng",
+            "columnName": "cityLng",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "cityLat",
+            "columnName": "cityLat",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "temperature",
+            "columnName": "temperature",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "maxTemperature",
+            "columnName": "maxTemperature",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "minTemperature",
+            "columnName": "minTemperature",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "weatherParametersType",
+            "columnName": "weatherParametersType",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "weatherIcon",
+            "columnName": "weatherIcon",
             "affinity": "TEXT",
             "notNull": true
           }
@@ -126,7 +76,7 @@
     "views": [],
     "setupQueries": [
       "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
-      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '8005ff3b9f7697bf71ce881327ffee41')"
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '5a6f27aae3801cbddf3cfaf305bd8d25')"
     ]
   }
 }

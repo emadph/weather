@@ -6,14 +6,15 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="tempType">#daf9ff</color>
 
 
     <color name="bg_button">#D50000</color>
-    <color name="bg_selected_subTab">#FEE9E9</color>
-    <color name="bg_unSelected_subTab">#F2F2F2</color>
 
     <color name="error">#FF2424</color>
     <color name="title">#202124</color>
+    <color name="bgWind">#8D79AAF6</color>
+    <color name="bgStorkWind">#79aaf6</color>
     <color name="border">#E0E2E3</color>
     <color name="subTitle">#9A9EA4</color>
     <color name="subTitleDark">#5E6268</color>

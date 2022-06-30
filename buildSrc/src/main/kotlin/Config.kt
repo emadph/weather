@@ -7,6 +7,7 @@ object Config {
     const val API_ROOT_TEST = "\"http://api.openweathermap.org/data/2.5/\""
     const val API_ROOT = "\"http://api.openweathermap.org/data/2.5/\""
     const val SECRET_KEY = "\"c37489058728f6774820d79553f9fdd7\""
+    const val WEATHER_ICON_BASE_URL = "\"http://openweathermap.org/img/wn/\""
 
 }
 
@@ -22,6 +23,7 @@ fun Project.configAndroid() = this.extensions.getByType<BaseExtension>().run {
         buildConfigField("String", "API_ROOT", Config.API_ROOT)
         buildConfigField("String", "API_ROOT_TEST", Config.API_ROOT_TEST)
         buildConfigField("String", "SECRET_KEY", Config.SECRET_KEY)
+        buildConfigField("String", "WEATHER_ICON_BASE_URL", Config.WEATHER_ICON_BASE_URL)
 
         compileOptions {
             sourceCompatibility = JavaVersion.VERSION_1_8

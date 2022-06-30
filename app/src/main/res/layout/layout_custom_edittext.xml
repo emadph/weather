@@ -29,6 +29,7 @@
         android:paddingEnd="@dimen/size_16dp"
         android:paddingStart="@dimen/size_16dp"
         android:singleLine="true"
+        android:gravity="right|center"
         android:textColor="@color/title"
         android:textColorHint="@color/subTitle"
         android:textCursorDrawable="@null"

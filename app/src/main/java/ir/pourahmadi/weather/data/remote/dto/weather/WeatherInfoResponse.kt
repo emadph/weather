@@ -1,7 +1,7 @@
 package ir.pourahmadi.weather.data.remote.dto.weather
 
 import com.google.gson.annotations.SerializedName
-import ir.pourahmadi.weather.domain.model.news.WeatherInfoModel
+import ir.pourahmadi.weather.domain.model.weather.WeatherInfoModel
 
 class WeatherInfoResponse(
     @SerializedName("id") var id: Int,
@@ -13,4 +13,6 @@ class WeatherInfoResponse(
     fun toModel(): WeatherInfoModel {
         return WeatherInfoModel(id, main,description,icon)
     }
+
+
 }

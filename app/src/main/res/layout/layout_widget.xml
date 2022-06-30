@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/widget_background"
+    android:id="@+id/mainLayout"
+    android:padding="@dimen/size_8dp">
+
+    <ImageView
+        android:id="@+id/imgWeatherIcon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignTop="@+id/tvTemp"
+        android:layout_toStartOf="@+id/tvTemp"
+        android:contentDescription="@string/app_name" />
+
+    <TextView
+        style="@style/TextBodyPrimary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tvTemp"
+        android:layout_alignParentTop="true"
+        android:layout_alignTop="@id/tvTemp"
+        android:layout_toEndOf="@+id/tvTemp"
+        android:gravity="end|center"
+        android:text="@string/lbl_TempUnit"
+        android:textColor="@color/white"
+        tools:ignore="RelativeOverlap" />
+
+    <TextView
+        android:id="@+id/tvCityName"
+        style="@style/TextTitlePrimary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvTemp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="@dimen/size_8dp"
+        android:gravity="end|center"
+        android:textColor="@color/white"
+        app:drawableStartCompat="@drawable/ic_location" />
+
+    <TextView
+        android:id="@+id/tvTemp"
+        style="@style/TextTitlePrimaryBold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="@dimen/size_16dp"
+        android:gravity="end|center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_24" />
+
+
+</RelativeLayout>

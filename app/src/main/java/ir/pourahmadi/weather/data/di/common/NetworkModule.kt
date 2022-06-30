@@ -2,8 +2,7 @@ package ir.pourahmadi.weather.data.di.common
 
 import android.content.Context
 import ir.pourahmadi.weather.BuildConfig
-import ir.pourahmadi.weather.utils.NetworkConnectionInterceptor
-import ir.pourahmadi.weather.utils.ignoreAllSSLErrors
+import ir.pourahmadi.weather.utils.Network.ignoreAllSSLErrors
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -52,7 +51,6 @@ object NetworkModule {
             readTimeout(60, TimeUnit.SECONDS)
             writeTimeout(60, TimeUnit.SECONDS)
             addInterceptor(requestInterceptor)
-            addInterceptor(NetworkConnectionInterceptor(context))
             cache(cache)
             ignoreAllSSLErrors()
             if (BuildConfig.DEBUG) {

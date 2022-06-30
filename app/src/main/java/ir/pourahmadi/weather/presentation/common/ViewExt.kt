@@ -1,8 +1,5 @@
 package ir.pourahmadi.weather.presentation.common
 
-import android.text.Editable
-import android.text.TextWatcher
-import android.util.DisplayMetrics
 import android.view.View
 import android.view.ViewGroup
 import android.view.inputmethod.EditorInfo
@@ -21,10 +18,6 @@ fun View.visible() {
     visibility = View.VISIBLE
 }
 
-fun View.invisible() {
-    visibility = View.INVISIBLE
-}
-
 fun View.visibility(loading: Boolean) {
     when (loading) {
         true -> {
@@ -36,7 +29,6 @@ fun View.visibility(loading: Boolean) {
     }
 }
 
-
 fun ViewGroup.disableEnableControls(function: View.() -> Unit) {
     this.forEach { child ->
         child.function()
@@ -44,6 +36,13 @@ fun ViewGroup.disableEnableControls(function: View.() -> Unit) {
             child.disableEnableControls(function)
         }
     }
+}
+
+fun ImageView.loadImage(url: String) {
+    Glide.with(this)
+        .load(url)
+        .into(this)
+
 }
 
 fun EditText.onDone(callback: () -> Unit) {
@@ -58,14 +57,3 @@ fun EditText.onDone(callback: () -> Unit) {
         false
     }
 }
-
-fun ImageView.loadImage(url: String, @DrawableRes placeholder: Int = R.mipmap.ic_launcher) {
-    Glide.with(this)
-        .load(url)
-        .placeholder(placeholder)
-        .into(this)
-
-}
-
-fun Int.dpToPx(displayMetrics: DisplayMetrics): Int = (this * displayMetrics.density).toInt()
-

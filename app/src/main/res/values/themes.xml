@@ -20,8 +20,6 @@
         <item name="colorOnError">@color/white</item>
         <item name="fontFamily">@font/ir_yekan_regular</item>
 
-        <item name="bottomSheetDialogTheme">@style/BaseBottomSheetDialog</item>
-
     </style>
 
 

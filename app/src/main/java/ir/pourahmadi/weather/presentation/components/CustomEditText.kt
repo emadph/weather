@@ -1,6 +1,7 @@
 package ir.pourahmadi.weather.presentation.components
 
 import android.content.Context
+import android.graphics.drawable.Drawable
 import android.text.InputFilter
 import android.util.AttributeSet
 import android.view.LayoutInflater
@@ -47,18 +48,18 @@ class CustomEditText @JvmOverloads constructor(
                     )
             )
 
-
             when (showError) {
                 true -> {
                     tvCustomeError.visibility = VISIBLE
                 }
                 false -> {
-                    edtCustome.background = getDrawable(context, R.drawable.shape_otp_view)
+                    edtCustome.background = getDrawable(context, R.drawable.shape_edt_view)
                     tvCustomeError.visibility = GONE
                 }
             }
 
-            edtCustome.hint=setHint
+
+            edtCustome.hint = setHint
             tvCustomeError.text = setErrorText
 
             typedArray.recycle()
@@ -78,6 +79,13 @@ class CustomEditText @JvmOverloads constructor(
     fun setSelection(text: String) {
         edtCustome.setSelection(text.length)
     }
+    fun setDrawableLeft(drawableLeft: Drawable) {
+        edtCustome.setCompoundDrawablesWithIntrinsicBounds(
+            drawableLeft,
+            null, null, null
+        )
+    }
+
     fun setHint(text: String) {
         edtCustome.hint = text
     }
@@ -95,28 +103,11 @@ class CustomEditText @JvmOverloads constructor(
             }
             false -> {
                 tvCustomeError.visibility = GONE
-                edtCustome.background = getDrawable(context, R.drawable.shape_otp_view)
+                edtCustome.background = getDrawable(context, R.drawable.shape_edt_view)
             }
         }
     }
 
-    fun showSuccess(isSuccess: Boolean) {
-        when (isSuccess) {
-            true -> {
-                tvCustomeError.visibility = GONE
-                edtCustome.background = getDrawable(context, R.drawable.shape_otp_view)
-                edtCustome.setCompoundDrawablesWithIntrinsicBounds(
-                    0,
-                    0,
-                    R.drawable.ic_check,
-                    0
-                );
-            }
-            false -> {
-                edtCustome.setCompoundDrawablesWithIntrinsicBounds(0, 0, 0, 0);
-            }
-        }
-    }
 
     fun setFocus() {
         edtCustome.requestFocus()

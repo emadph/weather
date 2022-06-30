@@ -1,8 +1,6 @@
 package ir.pourahmadi.weather.utils
 
 import ir.pourahmadi.weather.R
-import ir.pourahmadi.weather.presentation.common.isNumber
-import ir.pourahmadi.weather.presentation.common.isPublicName
 
 class Validate {
 

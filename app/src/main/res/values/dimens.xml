@@ -1,22 +1,18 @@
 <resources>
-    <dimen name="text_size_28">28sp</dimen>
-    <dimen name="text_size_20">20sp</dimen>
+    <dimen name="text_size_88">88sp</dimen>
+    <dimen name="text_size_24">24sp</dimen>
     <dimen name="text_size_16">16sp</dimen>
     <dimen name="text_size_14">14sp</dimen>
     <dimen name="text_size_12">12sp</dimen>
 
-    <dimen name="size_60dp">60dp</dimen>
     <dimen name="size_32dp">32dp</dimen>
-    <dimen name="size_25dp">25dp</dimen>
+    <dimen name="size_18dp">18dp</dimen>
     <dimen name="size_16dp">16dp</dimen>
     <dimen name="size_12dp">12dp</dimen>
     <dimen name="size_8dp">8dp</dimen>
-    <dimen name="size_7dp">7dp</dimen>
     <dimen name="size_5dp">5dp</dimen>
     <dimen name="size_4dp">4dp</dimen>
-    <dimen name="size_3dp">3dp</dimen>
     <dimen name="size_2dp">2dp</dimen>
-    <dimen name="size_1dp">1dp</dimen>
     <dimen name="size_42dp">42dp</dimen>
     <dimen name="size_52dp">52dp</dimen>
     <!-- Default screen margins, per the Android Design guidelines. -->

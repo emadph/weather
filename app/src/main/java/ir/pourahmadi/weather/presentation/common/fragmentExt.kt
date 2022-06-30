@@ -1,11 +1,13 @@
 package ir.pourahmadi.weather.presentation.common
 
+import android.app.Activity
 import android.view.View
 import android.widget.TextView
 import androidx.annotation.StringRes
 import androidx.core.content.ContextCompat
 import androidx.core.view.ViewCompat
 import androidx.core.widget.TextViewCompat
+import androidx.fragment.app.Fragment
 import com.google.android.material.snackbar.Snackbar
 import ir.pourahmadi.weather.R
 import ir.pourahmadi.weather.utils.getColor
@@ -33,11 +35,15 @@ inline fun View.snack(
     snack.show()
 }
 
-fun Snackbar.action(@StringRes actionRes: Int, color: Int? = null, listener: (View) -> Unit) {
-    action(view.resources.getString(actionRes), color, listener)
-}
-
 fun Snackbar.action(action: String, color: Int? = null, listener: (View) -> Unit) {
     setAction(action, listener)
     color?.let { setActionTextColor(ContextCompat.getColor(context, color)) }
+}
+
+fun Fragment.hideKeyboard() {
+    view?.let { activity?.hideKeyboard(it) }
+}
+
+fun Activity.hideKeyboard() {
+    hideKeyboard(currentFocus ?: View(this))
 }

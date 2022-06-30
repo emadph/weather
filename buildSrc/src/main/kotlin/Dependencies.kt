@@ -15,8 +15,6 @@ object Dependencies {
 
     const val lottie = "com.airbnb.android:lottie:${Versions.lottie}"
 
-    const val eventBus = "org.greenrobot:eventbus:${Versions.eventBus}"
-
     object Lifecycle {
         const val runtime = "androidx.lifecycle:lifecycle-runtime-ktx:${Versions.lifecycle}"
         const val viewmodel = "androidx.lifecycle:lifecycle-viewmodel-ktx:${Versions.lifecycle}"
@@ -85,46 +83,6 @@ object Dependencies {
         const val ktx = "androidx.room:room-ktx:${Versions.ArchitectureComponents.room}"
     }
 
-    object Test {
-        const val junit = "junit:junit:${Versions.junit}"
-        const val extJunit = "androidx.test.ext:junit:${Versions.extJunit}"
-        const val extJunitKtx = "androidx.test.ext:junit-ktx:${Versions.extJunit}"
-        const val coreTest = "androidx.test:core:${Versions.coreTest}"
-        const val coreTestKtx = "androidx.test:core-ktx:${Versions.coreTest}"
-        const val coreTesting = "androidx.arch.core:core-testing:${Versions.coreTesting}"
-        const val coroutines =
-            "org.jetbrains.kotlinx:kotlinx-coroutines-test:${Versions.coroutines}"
-        const val extTruth = "androidx.test.ext:truth:${Versions.extTruth}"
-        const val truth = "com.google.truth:truth:${Versions.truth}"
-        const val okhttp = "com.squareup.okhttp3:mockwebserver3:${Versions.okhttp}"
-        const val mockk = "io.mockk:mockk:${Versions.mockk}"
-
-        const val hiltTesting = "com.google.dagger:hilt-android-testing:${Versions.hilt}"
-        const val hiltKaptTesting = "com.google.dagger:hilt-android-compiler:${Versions.hilt}"
-
-        const val espressoCore = "androidx.test.espresso:espresso-core:${Versions.espresso}"
-        const val runner = "androidx.test:runner:${Versions.testRunner}"
-        const val rules = "androidx.test:rules:${Versions.rules}"
-        const val robolectric = "org.robolectric:robolectric:${Versions.robolectric}"
-        const val stdLib = "org.jetbrains.kotlin:kotlin-stdlib:${Versions.kotlin}"
-        const val navigationTesting =
-            "androidx.navigation:navigation-testing:${Versions.navigationTesting}"
-        const val fragmentTesting = "androidx.fragment:fragment-testing:${Versions.fragment}"
-
-
-        const val espressoContrib = "androidx.test.espresso:espresso-contrib:${Versions.espresso}"
-        const val espressoIntents = "androidx.test.espresso:espresso-intents:${Versions.espresso}"
-        const val espressoAccessibility =
-            "androidx.test.espresso:espresso-accessibility:${Versions.espresso}"
-        const val espressoWeb = "androidx.test.espresso:espresso-web:${Versions.espresso}"
-        const val espressoConcurrent =
-            "androidx.test.espresso.idling:idling-concurrent:${Versions.espresso}"
-        const val espressoIdleResource =
-            "androidx.test.espresso:espresso-idling-resource:${Versions.espresso}"
-
-        const val mockito = "org.mockito:mockito-android:${Versions.mockito}"
-    }
-
 }
 
 fun Project.importCommonPlugins() {
@@ -141,8 +99,6 @@ fun Project.importCommonDependencies() {
         "implementation"(Dependencies.Kotlin.stdLib)
 
         val implementation by configurations
-        val testImplementation by configurations
-        val androidTestImplementation by configurations
 
         implementation(Dependencies.AndroidX.coreKtx)
         implementation(Dependencies.AndroidX.appCompat)
@@ -151,45 +107,6 @@ fun Project.importCommonDependencies() {
         implementation(Dependencies.material)
 
         implementation(Dependencies.Logging.logger)
-
-        // For instrumentation tests
-        androidTestImplementation(Dependencies.Test.junit)
-        androidTestImplementation(Dependencies.Test.extJunit)
-        androidTestImplementation(Dependencies.Test.extJunitKtx)
-        androidTestImplementation(Dependencies.Test.truth)
-        androidTestImplementation(Dependencies.Test.extTruth)
-        androidTestImplementation(Dependencies.Test.coreTest)
-        androidTestImplementation(Dependencies.Test.coreTestKtx)
-        androidTestImplementation(Dependencies.Test.coreTesting)
-
-        androidTestImplementation(Dependencies.Test.espressoCore)
-        androidTestImplementation(Dependencies.Test.espressoContrib)
-        androidTestImplementation(Dependencies.Test.espressoIntents)
-        androidTestImplementation(Dependencies.Test.espressoAccessibility)
-        androidTestImplementation(Dependencies.Test.espressoConcurrent)
-        androidTestImplementation(Dependencies.Test.espressoIdleResource)
-        androidTestImplementation(Dependencies.Test.espressoWeb)
-        androidTestImplementation(Dependencies.Test.navigationTesting)
-        "debugImplementation"(Dependencies.Test.fragmentTesting)
-
-        androidTestImplementation(Dependencies.Test.hiltTesting)
-        "kaptAndroidTest"(Dependencies.Test.hiltKaptTesting)
-        androidTestImplementation(Dependencies.Test.runner)
-        androidTestImplementation(Dependencies.Test.coroutines)
-        androidTestImplementation(Dependencies.Test.okhttp)
-        androidTestImplementation(Dependencies.Test.mockk)
-        androidTestImplementation(Dependencies.Test.mockito)
-
-        // For local unit tests
-        testImplementation(Dependencies.Test.junit)
-        testImplementation(Dependencies.Test.coroutines)
-        testImplementation(Dependencies.Test.truth)
-        testImplementation(Dependencies.Test.extTruth)
-        testImplementation(Dependencies.Test.mockito)
-        testImplementation(Dependencies.Test.okhttp)
-        testImplementation(Dependencies.Test.mockk)
-        testImplementation(Dependencies.Test.robolectric)
-
 
     }
 }
